@@ -1,0 +1,2 @@
+# Information & Web Programming
+This repo is meant to be a companion for the Fordham University class CISC 2350 Information & Web Programming. It will be the main source for all assignments, lecture notes, projects, and general class materials.  To get started, please [fork the repo](https://help.github.com/articles/fork-a-repo/) and follow the instructions below.
