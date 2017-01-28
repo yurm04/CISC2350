@@ -58,4 +58,4 @@ You should now be set up to reference the class remote repository in order to st
   ```
   git pull upstream master
   ```
-This command pulls down any changes made to the class remote repository (upstream) and reflects them in your local copy.  *Make sure to run this command and pull down changes to the class repository on a regular basis.*
+This command pulls down any changes made to the class remote repository (upstream) and reflects them in your local copy.  **Make sure to run this command and pull down changes to the class repository on a regular basis.**
