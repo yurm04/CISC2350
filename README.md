@@ -1,26 +1,37 @@
 # Information & Web Programming
-This repo is meant to be a companion for the Fordham University class CISC 2350 Information & Web Programming. It will be the main source for all assignments, lecture notes, projects, and general class materials.  To get started, please [fork the repo](https://help.github.com/articles/fork-a-repo/) and follow the instructions below.
+This repo is meant to be a companion for the Fordham University class CISC 2350 Information & Web Programming. It will be the main source for all assignments, lecture notes, projects, and general class materials.  To get started, please [clone the repo](https://help.github.com/articles/cloning-a-repository/) and follow the instructions below.
 
 ## How to use this repo
-The CISC 2350 repository should be used as both a resource and a template for individual assignment submissions.  When you fork the repo, it should be added to your GitHub profile as a private repo.  **Please keep your forked copy private, and do not share with other students to remain in compliance with the university academic integrity policy**.
+The CISC 2350 repository should be used as both a resource and a template for individual assignment submissions.  When you clone the repo to your local machine, you will need to create a remote GitHub repository in your own account to keep your own changes synced.  **Please keep your repo copy private, and do not share with other students to remain in compliance with the university academic integrity policy**.
 
-In addition to forking your own copy of the repository, please [add me as a contributor](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/) to your private copy using my GitHub username: `yurm04`.
+In addition to cloning your own copy of the repository, please [add me as a contributor](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/) to your private copy using my GitHub username: `yurm04`.
 
-**Going forward, we will refer to your forked copy of this repository as *your repo*, and this original class repository as the *class repo*.**
+**Going forward, we will refer to your cloned copy of this repository as *your repo*, and this original class repository as the *class repo*.**
 
-### Cloning your forked copy to your local machine.
-To get set up with a local copy of your repo:
+## Cloning the class repo to your local machine.
+After you have been successfully added as a collaborator to the class repository, you will have access to clone your own local copy.  This will give you your own version of the class repo that you can make changes to, use to submit assignments, and keep in sync with the class repository as the course progresses.
 
-1. Navigate to your GitHub profile and click into your CISC2350 repo.
-2. From your CISC2350 repo page, click the green "Clone or download" button to copy the link to your repository.  If you do not have SSH keys set up to your account, make sure you choose to clone with HTTPS.
-3. From your terminal/command line run the following command in the directory where you want to download your respository to, making sure to replace `<YOUR_REPOSITORY_URL>` with your repository URL that you just copied:
+### From the terminal
+To get set up with a local copy of the class repo:
 
+1. From the class repo page, click the green `Clone or download` button to copy the class repo URL.  If you do not have SSH keys set up with GitHub (if you aren't sure, your probably do not have them set up), then **make sure you copy the HTTPS url**.
+2. Open your terminal/command line and navigate to/create a directory that you would like to save the repository in.
+3. Run the `git clone` command to clone the repo to your local machine.  This will create a `CISC2350` directory and clone the repository to it locally. **Note** You may be prompted to enter your GitHub username and password if this is the first time using git from the terminal.
   ```
-  git clone <YOUR_REPOSITORY_URL>
+  git clone https://github.com/yurm04/CISC2350.git
   ```
-4. You may be prompted to enter your GitHub username and password, and then the download will begin.  Once completed, you should see a new `CISC2350` directory with your repo in it.
-5. To be able to push/pull changes to/from your remote repo, make sure you have your remote repository set up using the `git remote -v` command.  You should see the following output, with `origin` being your remote repository URL:
+4. Once cloning is completed, navigate to your newly copied `CISC2350` directory.  You can now begin to make changes to your repository locally.
 
+### Via GitHub Desktop
+If you are using GitHub Desktop, make sure you have the application installed and you are properly signed in.  The following instructions were copied from the [official GitHub Desktop documentation site](https://help.github.com/desktop/guides/contributing/cloning-a-repository-from-github-to-github-desktop/).
+
+1. From the class repo page, click the green `Clone or download` button.
+2. Click `Open in Desktop`.  This should open up the GitHub Desktop application on your machine.
+3. You will be prompted to enter a respository name (CISC2350), and choose a location to save the repository.  Once you have filled out this information, click `Clone` to finish cloning the repository.
+4. You should now have the class repository set up in the location you designated.  Navigate to this directory to ensure that you were able to successfully clone.  If everthing checks out, you are now ready to being making changes to your local repository.
+
+## Creating your GitHub repo
+At this point you should have a local copy of the class repository.  Now, it is time to create a GitHub repository where you will push your local changes to remotely.
   ```
   $  git remote -v
   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
