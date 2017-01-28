@@ -11,62 +11,56 @@ In addition to cloning your own copy of the repository, please [add me as a cont
 ## Cloning the class repo to your local machine.
 After you have been successfully added as a collaborator to the class repository, you will have access to clone your own local copy.  This will give you your own version of the class repo that you can make changes to, use to submit assignments, and keep in sync with the class repository as the course progresses.
 
-### From the terminal
-To get set up with a local copy of the class repo:
+To get set up with a local copy of the class repo via the terminal/command line:
 
-1. From the class repo page, click the green `Clone or download` button to copy the class repo URL.  If you do not have SSH keys set up with GitHub (if you aren't sure, your probably do not have them set up), then **make sure you copy the HTTPS url**.
-2. Open your terminal/command line and navigate to/create a directory that you would like to save the repository in.
-3. Run the `git clone` command to clone the repo to your local machine.  This will create a `CISC2350` directory and clone the repository to it locally. **Note** You may be prompted to enter your GitHub username and password if this is the first time using git from the terminal.
+1. From the class repo page, click the green `Clone or download` button to copy the repo URL.  If you do not have SSH keys set up with GitHub (if you aren't sure, you probably do not have them set up), then **make sure you copy the HTTPS url**.
+2. Open your terminal/command line and navigate to a directory that you would like to save the repository in.
+3. Run the `git clone` command to clone the repo to your local machine.  This will create a `CISC2350` directory and clone the repository locally. **Note** You may be prompted to enter your GitHub username and password if this is the first time using git from the terminal.
   ```
   git clone https://github.com/yurm04/CISC2350.git
   ```
-4. Once cloning is completed, navigate to your newly copied `CISC2350` directory.  You can now begin to make changes to your repository locally.
+4. Once done cloning, navigate to your newly copied `CISC2350` directory.  You can now begin to make changes to your repository locally.
 
-### Via GitHub Desktop
-If you are using GitHub Desktop, make sure you have the application installed and you are properly signed in.  The following instructions were copied from the [official GitHub Desktop documentation site](https://help.github.com/desktop/guides/contributing/cloning-a-repository-from-github-to-github-desktop/).
+## Updating your local repo with the online class repo
+You now have a copy of the class repo on your local machine :+1:  This is your own personal copy that you can make any changes to, without affecting the original class repository.  However, because you cloned this repository from the class original, you also have a remote reference to the class repo in your local repo.  We'll want to make some changes to this remote class reference before we set up your own remote GitHub repo.
 
-1. From the class repo page, click the green `Clone or download` button.
-2. Click `Open in Desktop`.  This should open up the GitHub Desktop application on your machine.
-3. You will be prompted to enter a respository name (CISC2350), and choose a location to save the repository.  Once you have filled out this information, click `Clone` to finish cloning the repository.
-4. You should now have the class repository set up in the location you designated.  Navigate to this directory to ensure that you were able to successfully clone.  If everthing checks out, you are now ready to being making changes to your local repository.
+### Renaming remote class repo via the command line
+1. From your local repo, run the command `git remote -v` to list out all of the remote repos set up with this project.  You should see the following references to the class repository.
+  ```
+  $  git remote -v
+  origin  https://github.com/yurm04/CISC2350.git (fetch)
+  origin  https://github.com/yurm04/CISC2350.git (push)
+  ```
+2. Let's rename the current `origin` remote - currently pointing to our class repo - to something that better describes it.  Run the command `git remote rename origin class`.  This will rename the class remote reference from `origin` to `class`.
+3. Run the `git remote -v` command again and you should see that the remote class reference was renamed to `class`.
+  ```
+  $  git remote -v
+  class  https://github.com/yurm04/CISC2350.git (fetch)
+  class  https://github.com/yurm04/CISC2350.git (push)
+  ```
+
+Now that you have renamed the remote class repository, you'll be able reference it more easily when pulling changes from it.
 
 ## Creating your GitHub repo
-At this point you should have a local copy of the class repository.  Now, it is time to create a GitHub repository where you will push your local changes to remotely.
+At this point you should have a local copy of the class repository, with a reference to the remote class repository set up.  Now, it is time to create a GitHub repository where you will push your local changes to.
+
+1. Navigate to your GitHub profile.
+2. In the top right corner, click on the `+` dropdown and click `New repository`.
+  ![Dropdown for creating a new repository](docs/new_repo.png)
+3. From the `Create a new repository` page, enter your repository name (I suggest `CISC2350`), a short description, and make sure to **set to Private**.  Once this is complete, click the green `Create repository` button.
+  ![Filling out the Create new repository form](docs/create_new_repo.png)
+4. When you create the repository, you will see a `Quick setup` page giving you information on how to proceed with pushing your local repository up to your GitHub.
+5. From your local repo run the two commands in the `…or push an existing repository from the command line` section (purple box in the image below) of the page.  This will add a reference called `origin` to your repo, allowing you to communicate with your GitHub repo from your local repo.
+  ![Quick setup page from new repository](docs/quick_setup.png)
+6. Run the `git remote -v` command from your repo to make sure that the `origin` remote reference was added.  You should see an output similar to below.
   ```
   $  git remote -v
+  class  https://github.com/yurm04/CISC2350.git (fetch)
+  class  https://github.com/yurm04/CISC2350.git (push) 
   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
   ```
-If you don't see `origin` set up, make sure to run the `git remote add` to set up your repo as the `origin` remote.
 
-  ```
-  git remote add origin https://github.com/YOUR_USERNAME/YOUR_FORK.git
-  ```
+You have now created a GitHub repository and set up your local copy to communicate with the remote class repo and your remote repo :tada:
 
-### Sync your repo with the class repo
-In order to ensure that your forked repository stays up to date with the changes made here, you'll need to configure your local repository to include the class remote repository.  To do this:
-
-1. From your terminal/command line navigate to your local copy of the CISC2350 repository.
-2. In the repository directory, run the command `git remote -v` to list out your current remote repositories.  The output should look like:
-
-  ```
-  $  git remote -v
-  origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-  origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-  ```
-3. Use the command `git remote add upstream https://github.com/yurm04/CISC2350.git` to add this class repository to your local list of remotes.  In the above command `upstream` is the name of our remote class repository.
-4. Run `git remote -v` again and you should see a new remote repository called `upstream` that points to this class repository.  It will look like:
-
-  ```
-  $  git remote -v
-  origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-  origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-  upstream  https://github.com/yurm04/CISC2350.git (fetch)
-  upstream  https://github.com/yurm04/CISC2350.git (push)
-  ```
-You should now be set up to reference the class remote repository in order to stay up to date with any changes made here.  To pull down any changes from the class remote repository to your local forked copy, run the command:
-
-  ```
-  git pull upstream master
-  ```
-This command pulls down any changes made to the class remote repository (upstream) and reflects them in your local copy.  **Make sure to run this command and pull down changes to the class repository on a regular basis.**
+**Please make sure to stay up to date with changes made to the class repository**.  By running the `git pull class master` command, you will be able to pull down any changes made to the class repo.
