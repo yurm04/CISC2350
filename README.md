@@ -16,9 +16,11 @@ To get set up with a local copy of the class repo via the terminal/command line:
 1. From the class repo page, click the green `Clone or download` button to copy the repo URL.  If you do not have SSH keys set up with GitHub (if you aren't sure, you probably do not have them set up), then **make sure you copy the HTTPS url**.
 2. Open your terminal/command line and navigate to a directory that you would like to save the repository in.
 3. Run the `git clone` command to clone the repo to your local machine.  This will create a `CISC2350` directory and clone the repository locally. **Note** You may be prompted to enter your GitHub username and password if this is the first time using git from the terminal.
+
   ```
   git clone https://github.com/yurm04/CISC2350.git
   ```
+  
 4. Once done cloning, navigate to your newly copied `CISC2350` directory.  You can now begin to make changes to your repository locally.
 
 ## Updating your local repo with the online class repo
@@ -26,13 +28,16 @@ You now have a copy of the class repo on your local machine :+1:  This is your o
 
 ### Renaming remote class repo via the command line
 1. From your local repo, run the command `git remote -v` to list out all of the remote repos set up with this project.  You should see the following references to the class repository.
+
   ```
   $  git remote -v
   origin  https://github.com/yurm04/CISC2350.git (fetch)
   origin  https://github.com/yurm04/CISC2350.git (push)
   ```
+  
 2. Let's rename the current `origin` remote - currently pointing to our class repo - to something that better describes it.  Run the command `git remote rename origin class`.  This will rename the class remote reference from `origin` to `class`.
 3. Run the `git remote -v` command again and you should see that the remote class reference was renamed to `class`.
+
   ```
   $  git remote -v
   class  https://github.com/yurm04/CISC2350.git (fetch)
@@ -53,6 +58,7 @@ At this point you should have a local copy of the class repository, with a refer
 5. From your local repo run the two commands in the `…or push an existing repository from the command line` section (purple box in the image below) of the page.  This will add a reference called `origin` to your repo, allowing you to communicate with your GitHub repo from your local repo.
   ![Quick setup page from new repository](docs/quick_setup.png)
 6. Run the `git remote -v` command from your repo to make sure that the `origin` remote reference was added.  You should see an output similar to below.
+
   ```
   $  git remote -v
   class  https://github.com/yurm04/CISC2350.git (fetch)
