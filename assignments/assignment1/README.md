@@ -19,6 +19,9 @@ Please make sure you validate your HTML using the [W3C validator](https://valida
 
 Feel free to take creative ownership of the content, structure, and layout of the page.
 
+## Submission
+Your HTML file will need to be submitted through BlackBoard.  There is an assignment 1 module available where you can attach your HTML file.  **The due date for assignment 1 is February 1, 6PM**  Please make sure you submit your assignment on time, as late submissions will not be accepted.
+
 ## Grading Breakdown
 - 60pts for including all of the necessary elements from the above description in your Bio page.
 - 10pts for a valid, error free file.
