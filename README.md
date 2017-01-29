@@ -67,6 +67,6 @@ At this point you should have a local copy of the class repository, with a refer
   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
   ```
 
-You have now created a GitHub repository and set up your local copy to communicate with the remote class repo and your remote repo :tada:
+You have now created a GitHub repository and set up your local copy to communicate with the remote class repo and your remote repo :tada: At this point, you are ready to **[add me as a collaborator](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/)** to your GitHub repo.
 
 **Please make sure to stay up to date with changes made to the class repository**.  By running the `git pull class master` command, you will be able to pull down any changes made to the class repo.
