@@ -20,7 +20,19 @@
 		is what causes the link below to open in a
 		new tab when clicked -->
 		<a href="http://www.fordham.edu" target="_blank">
-			<img src="http://www.reactiongifs.com/r/mgc.gif" alt="Shia in wig, saying magic." />
+			<!-- commenting out to explain referencing local images after -->
+			<!-- <img src="http://www.reactiongifs.com/r/mgc.gif" alt="Shia in wig, saying magic." /> -->
+
+			<!--
+				because we are not including any kind of URL in the source, this tells the
+				browser that this image can be found in the site's directory structure.
+				In this case, we are telling the browser "the file 'magic.gif' is in the same
+				directory as this file.  Go fetch it from here."  When we reference images like this,
+				we need to also make sure that we are saving them to our website directory structure.
+				Here, you will see that the image 'magic.gif' has been saved to the same directory as
+				our index.html file.
+			 -->
+			<img src="magic.gif" alt="Shia in wig, saying magic." />
 		</a>
 
 		<!-- having multiple header elements of h2 - h6 is fine. -->
