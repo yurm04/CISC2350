@@ -1,7 +1,7 @@
-# Units and Values
+# Units & Dimensions
 CSS has many ways to specify [units of measurement and values](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units).
 
-## Length and Size
+## Length & Size
 The most common units we'll be using for setting the [size/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) of an element or property are:
 - `px`
 - `%`
