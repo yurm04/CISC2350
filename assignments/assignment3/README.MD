@@ -2,9 +2,10 @@
 Using the CSS and HTML topics covered this week, create a new web page (or make edits to your bio page) and include the properties and structural HTML elements from the lecture notes.  Be as creative as you want, but make sure you utilize:
 
 - Structural and container HTML elements (e.x. `<header>`, `<section>`, `<div>`, etc).
-- CSS `float` element
-- The CSS box model properties (e.x. `<padding>`, `<margin>`, etc.).
+- CSS position and layout properties.
+- The CSS box model properties (e.x. `padding`, `margin`, etc.).
 - At least two fonts.
+- Some colors :rainbow:
 - CSS selector combinators, psuedo-elements, and psuedo-classes.
 
 ## Additional Requirements
