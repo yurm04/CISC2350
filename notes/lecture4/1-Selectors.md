@@ -3,7 +3,7 @@
 ## Combining Selectors
 [Combining selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors) is one way to achieve a more specific selection on HTML elements.  You have several options available to you when performing selector combinations, through *combinators*
 
-![Available combinators formats](docs/combinators-table)
+![Available combinators formats](docs/combinators-table.png)
 
 ```css
 /* style.css */
