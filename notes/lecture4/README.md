@@ -59,7 +59,7 @@ Now let's checkout a few other ways we can leverage the ruleset selector using:
 - [Attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors)
 - [Psuedo-classes and psuedo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors)
 
-
+[Next »](1-Selectors.md)
 
 
 
