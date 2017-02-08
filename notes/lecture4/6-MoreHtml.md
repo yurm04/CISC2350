@@ -1,5 +1,6 @@
 # Structural HTML
 HTML5 comes jampacked with elements that are meant to semantically structure a page:
+
 - [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
 - [`<section>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
 - [`<article>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
