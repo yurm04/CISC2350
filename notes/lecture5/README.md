@@ -59,7 +59,4 @@ Let's take this time to go over the main topics we've discussed over the last fe
 ## New Assignment Repo & Workflow
 In order to make your assignment submissions easier to manage, we're going to set up new repositories.  These new repositories will be used *only* for managing your assignments locally, and submitting to a remote GitHub repo.
 
-Start by:
-
-1. Setting up a dedicated assignments repository
-2. Reviewing the new assignment submission workflow
+Start by [setting up a dedicated assignments repository](1-AssignmentRepo.md)
