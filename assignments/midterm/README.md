@@ -30,17 +30,17 @@ You should have a specific file structure for this midterm project to house your
 
 Here is a sample of what your directory structure should look like:
 ```
-- midterm/
-|-- index.html
-|-- file2.html
-|-- css/
-   |-- style.css
-|-- img/
-   |-- image1.png
-   |-- image2.png
-|-- valid/
-   |-- valid-html-screenshot.png
-   |-- valid-css-screenshot.png
+midterm
+├── index.html
+├── file2.html
+├── css
+|   └── style.css
+├── img
+|   ├── image1.png
+|   └── image2.png
+├── valid/
+|   ├── valid-html-screenshot.png
+|   └── valid-css-screenshot.png
 ```
 
 ### Validation
