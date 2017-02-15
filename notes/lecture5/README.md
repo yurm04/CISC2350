@@ -5,27 +5,27 @@ Let's take this time to go over the main topics we've discussed over the last fe
 
 ### Textbook Resources
 *A Guide to HTML5 and CSS3*
-    Parts 1 - 3
+- Parts 1 - 3
 
 ### Online Resources
 [*Mozilla Developer Network: Learn HTML*](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-    Each of their guides runs through the main important topics of HTML, starting with a quick overview.
+- Each of their guides runs through the main important topics of HTML, starting with a quick overview.
 
 ### Slides
-[Introduction to HTML and Git](docs/IntrotoHTMLGit.pdf);
+[Introduction to HTML and Git](docs/IntrotoHTMLGit.pdf)
 
 ## CSS
 
 ### Textbook Resources
 *A Guide to HTML5 and CSS3*
-    Part 4
+- Part 4
 
 *Learning PHP, MySQL, and JavaScript*
-    Chapter 18
+- Chapter 18
 
 ### Online Resources
 [*Mozilla Developer Network: Learn CSS*](https://developer.mozilla.org/en-US/docs/Learn/CSS)
-   Similar to the HTML guides, the MDN guides for CSS start with a general overview of introductory CSS topics and then progresses to the more advanced subjects.
+- Similar to the HTML guides, the MDN guides for CSS start with a general overview of introductory CSS topics and then progresses to the more advanced subjects.
 
 ### Slides
 [Introduction to CSS](docs/IntroCSS.pdf)
@@ -51,7 +51,7 @@ Let's take this time to go over the main topics we've discussed over the last fe
 
 ### Textbook Resources
 [*Pro Git*](https://git-scm.com/book/en/v2)
-    Chapters 1 & 2
+- Chapters 1 & 2
 
 ### Slides
 [Intro to HTML & Git](docs/IntrotoHTMLGit.pdf)
@@ -60,5 +60,6 @@ Let's take this time to go over the main topics we've discussed over the last fe
 In order to make your assignment submissions easier to manage, we're going to set up new repositories.  These new repositories will be used *only* for managing your assignments locally, and submitting to a remote GitHub repo.
 
 Start by:
+
 1. Setting up a dedicated assignments repository
 2. Reviewing the new assignment submission workflow
