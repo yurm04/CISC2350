@@ -2,7 +2,7 @@
 This assignment will be all about getting set up with our new, dedicated assignment repos and submitting a portion of your midterm project.
 
 ## Part 1:  Assignment Repo
-From here on out, you will be submitting your assignments to a dedicated assignment repository - separate from the class repo we have been using.  Follow the step-by-step instructions in the lecture notes to step up a repo on your local computer, as well as a remote GitHub repo to push your changes to.  
+From here on out, you will be submitting your assignments to a dedicated assignment repository - separate from the class repo we have been using.  [Follow the step-by-step instructions in the lecture notes](/notes/lecture5/1-AssignmentRepo.md) to step up a repo on your local computer, as well as a remote GitHub repo to push your changes to.  
 
 **The deliverables for this assignment section are:**
 
