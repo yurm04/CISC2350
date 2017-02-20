@@ -12,4 +12,7 @@ Lecture notes for each week can be found in the [`notes`](notes) directory of th
 ## In-class code samples
 There will often be live coding samples demonstrated during our scheduled class time.  These samples can be found in the [`samples`](samples) directory.  The samples are organized by lecture and class section.
 
-Section `c01` is the Wed. night Lincoln Center class, and `e01` is the Mon. night Rose Hill class.  So, the code samples from the Lincoln Center, lecture 1 session the directory can be found in the `samples/lecture1/c01` directory.
+- Section `c01` is the Wednesday night Lincoln Center class.
+- Section `e01` is the Monday night Rose Hill class.
+
+So, the code samples for the Lincoln Center, lecture1 session can be found in the `samples/lecture1/c01` directory.
