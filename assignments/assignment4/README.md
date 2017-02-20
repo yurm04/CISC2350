@@ -5,6 +5,7 @@ This assignment will be all about getting set up with our new, dedicated assignm
 From here on out, you will be submitting your assignments to a dedicated assignment repository - separate from the class repo we have been using.  Follow the step-by-step instructions in the lecture notes to step up a repo on your local computer, as well as a remote GitHub repo to push your changes to.  
 
 **The deliverables for this assignment section are:**
+
 1. A new *local* repository on your computer where you will be saving your assignments and work.
 2. A new remote repository on GitHub where you will be pushing your local repository to.
 3. Set up your repository to include every assignment we have completed until this point (1, 2, 3).
@@ -14,6 +15,7 @@ From here on out, you will be submitting your assignments to a dedicated assignm
 Read over the midterm project prompt.  The second part of this assignment is to get a head start on your midterm and submit a first draft.
 
 **This first draft will require the following:**
+
 1. The markup (HTML) for *at least two files*.  The midterm requires that you have at least two separate HTML files for your resume/portfolio website.  You need to submit the HTML for these files.  **CSS FILES ARE NOT REQUIRED FOR THIS ASSIGNMENT SUBMISSION.**  However, if you'd like to get started on the styling, feel free to include them in your submission.
 2. The appropriate file structure according to the midterm prompt (`img`  directory, `css` directory, `valid` directory).
 3. Screenshots of your validated HTML files included in the `valid` directory.
