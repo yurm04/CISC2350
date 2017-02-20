@@ -1,7 +1,7 @@
 # Dedicated Assignment Repository
 In this guide we will set up your new local assignment repo (on your computer), create a remote assignment repo on your GitHub, and sync the local and the remote repos.
 
-**To see an example `assignments` repository, [check out out the one I set up](https://github.com/yurm04/cisc2350-assignments)**
+**To see an example `assignments` repository, [check out out the one I set up](https://github.com/yurm04/cisc2350-assignments).**
 
 ## Setting up your new assignment repository
 1.  In your terminal or command prompt using the `pwd` and `cd` commands, navigate to a directory that you would like to store your assignments repository in.
@@ -69,7 +69,7 @@ Each week, you will be responsible for:
 
 Submitting your assignmnet directory URL gives me a simple way to reach your assignment directory for that week.  An example URL will look like:
     
-    ```
+    
     https://github.com/yurm04/cisc2350-assignments/tree/master/assignment1
-    ```
+    
 
