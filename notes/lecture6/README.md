@@ -1,6 +1,20 @@
 #  Lecture 6
+This week we will be discussing some auxilliary topics in HTML, CSS, and web development.
 
 ## Browser Compatibility
+An important practice in web development is developing sites that can work across multiple browsers among the various operating systems.  Ensuring that your website will function across all or most browsers is a key part of developing a highly accessible product.
+
+When developing for cross browser compatibility, you not only have to consider the type of browser, but also the *version* of the browser, and the operating system the browser is running on.  For example...
+
+| Browser | macOS/OSX | Windows | Linux | iOS | Android |
+|---|---|---|---|---|---|
+| Chrome | × | × | × | × | × |
+| Firefox | × | × | × | × | × |
+| Safari | × | | | × | |
+| IE | | × | × | | |
+| Other | × | × | × | × | × |
+
+**NOTE** When grading your assignments I will be using the latest version of **Chrome**
 
 ## Vendor Prefixes
 CSS [vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) are strings that are prepended to CSS properties in order to ensure that the property will be rendered in the specified browser (Firefox, Chrome, Safari, IE).  Vendor prefixes specify the *browser rendering engine* that a specific browser is build on top of.
@@ -221,5 +235,66 @@ ___
 	}
 	```
 
-## The DOM
-The Document Object Model (DOM) provides a structured representation of the [HTML] document and defines a way that the structure can be accessed from programs so that *they can change the document structure, style and content.*
+## Developer Tools
+Most modern browsers come with a suite of helpful tools that aid web development.  These tools give you insight into your HTML, CSS, JavaScript, and many other technologies.
+
+- [Chrome Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+- [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+
+##  Media Queries
+A CSS [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) is a directive that allows you to specify the styling for a specific medium, screen size, or device type.  The media query uses logical rules that will correspond to a _condition that must be met_ for the style to apply.
+
+To use a media query, you include the `@media` directive in your style sheet.  this should also include the logical operators, which indicate what conditions need to be met for the styling to apply.  the style rulesets  for the media query should be wrapped in curly braces.
+
+**The general media query format**
+
+```css
+@media (logical operators) {
+
+	/* Style rules added here normally */
+
+}
+```
+
+**Examples of media queries**
+
+```css
+@media only screen {
+
+	/*
+		Style rules only apply when
+		viewed on a screen
+	*/
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	/*
+		Style rules only apply when
+		viewed on a screen AND screen size
+		is at least 768px wide
+	*/
+
+}
+
+@media only print {
+
+	/*
+		Style rules only apply when in
+		print mode
+	*/
+
+}
+
+@media (min-width: 320px) and (max-width: 1020px) {
+
+	/*
+		Style rules only apply when
+		the viewport is at least 320px wide
+		and at most 1020px wide
+	*/
+
+}
+```
