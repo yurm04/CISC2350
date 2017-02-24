@@ -75,11 +75,6 @@ Information & Web Programming
 
 There is an extensive [list](http://www.freeformatter.com/html-entities.html) of HTML entity character codes and numbers.
 
-
-##  Media Queries
-
-## Developer Tools
-
 ## Style Guide
 A developer "style guide" is a write up detailing how your code should look.  The purpose of a style guide is to provide specific rules for how code should be structured in order to maintain consistency and readability in projects.
 
