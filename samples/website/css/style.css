@@ -1,0 +1,174 @@
+/* Noramlize */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: #231F20;
+}
+
+/* Give our body a spacey background image */
+body {
+	background-image: url("../img/gradient-from-black.jpg");
+	background-attachment: fixed;
+}
+
+/* Typography */
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Audiowide', cursive;
+	font-size: 3rem;
+	text-align: center;
+}
+
+h2, h3 {
+	font-family: 'Overpass Mono', monospace;
+	font-size: 2rem;
+	text-align: center;
+}
+
+p, a {
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+/* Header */
+
+header {
+	padding: 10rem 0 10rem;
+	color: #fff;
+}
+
+header h1 {
+	margin: 0 0 1rem;
+}
+
+header h1:after {
+	content: '';
+	height: 1px;
+	width: 30%;
+	display: block;
+	margin: 1rem auto 0;
+	background-color: white;
+}
+
+header h2 {
+	margin: 0;
+}
+
+/* nav and footer */
+nav,
+footer {
+	background-color: #212A34;;
+}
+
+nav a,
+footer a {
+	color: #E3E7F0;
+	text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+	color: #E3E7F0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* nav */
+nav {
+	padding: 1rem;
+	text-align: center;
+	font-size: 1.2rem;
+	/*background-color: #377CBF;*/
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+/* select any li that is not the last child */
+nav li:not(:last-child) {
+	margin-right: 4rem;
+}
+
+nav a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* site sections */
+
+.section-info {
+	padding: 3rem 20%;
+	margin: 0;
+	max-width: 1020px;
+	clear: both;
+}
+
+.section-info h3 {
+	margin-bottom: 4rem;
+}
+
+/* every even .section-info element */
+.section-info:nth-child(even) {
+	background-color: #FBFBFB;
+}
+
+/* the first .section-info and every odd .section-info */
+.section-info:nth-child(odd),
+.section-info:first-of-type {
+	background-color: #FFF;
+}
+
+/* section info */
+
+.info-pair {
+	margin: 0 auto;
+	display: table;
+}
+
+.info-pair p,
+.info-pair img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.info-pair p {
+	max-width: 50%;
+	min-width: 30%;
+}
+
+.info-pair img {
+	width: 150px;
+}
+
+/* float the first child to the left */
+.info-pair :first-child {
+	float: left;
+}
+
+/* float the last child to the right */
+.info-pair :last-child {
+	float: right;
+}
+
+/* footer */
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Info and Web Programming</title>
+
+	<!--
+		When referencing files that are in your website directory - which is the main directory that holds all of your website files
+		and folders - make sure you are providing filepaths in the context of your website  directory for 'src' and 'href'.
+
+		Absolute path: the filepath of a file or directory starting with the root directory - your MAIN WEBSITE DIRECTORY, represented by "/".
+		e.x. <link rel="stylesheet" href="/css/style.css">
+
+		Relative path: the filepath relative to the directory that the current file is in.
+		e.x. <link rel="stylesheet" href="css/style.css">
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- google fonts imported -->
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans|Overpass+Mono" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Information &amp; Web Programming</h1>
+		<h2>Fordham Unversity CISC 2350</h2>
+	</header>
+	<section class="section-info">
+		<h3>Course Description</h3>
+		<div class="info-pair">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse consectetur quisquam aliquam, possimus magnam eveniet, tempore. Corporis dignissimos minus repellendus, minima dolores omnis aperiam similique.</p>
+
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/the-web.svg" alt="The world wide web">
+		</div>
+	</section>
+	<nav>
+		<ul>
+			<li><a href="#html">HTML5</a></li>
+			<li><a href="#css">CSS3</a></li>
+			<li><a href="#git">Git &amp; GitHub</a></li>
+			<li><a href="#php">PHP</a></li>
+			<li><a href="#mysql">MySQL</a></li>
+		</ul>
+	</nav>
+	<section class="section-info" id="html">
+		<h3>HTML5</h3>
+		<div class="info-pair">
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/html5.svg" alt="HTML5">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at et sapiente pariatur aliquam aperiam ut, sit accusamus exercitationem, dolore qui atque fugit, totam aliquid.</p>
+		</div>
+	</section>
+	<section class="section-info" id="css">
+		<h3>CSS3</h3>
+		<div class="info-pair">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam est atque corporis, quae voluptates, dicta eius cumque illo officiis et, iusto! Adipisci dolorum, qui iste.</p>
+
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/css3.svg" alt="CSS3">
+		</div>
+	</section>
+	<section class="section-info" id="git">
+		<h3>Git &amp; GitHub</h3>
+		<div class="info-pair">
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/git.svg" alt="Git and GitHub">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit a nulla ducimus harum, deleniti recusandae, fuga expedita eveniet perspiciatis, exercitationem laboriosam, dolor id odio illo.</p>
+		</div>
+	</section>
+	<section class="section-info" id="php">
+		<h3>PHP</h3>
+		<div class="info-pair">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor tempora tempore, natus vitae laboriosam eos sit asperiores rem, temporibus tenetur aperiam quisquam repudiandae soluta hic.</p>
+
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/server.svg" alt="PHP">
+		</div>
+	</section>
+	<section class="section-info" id="mysql">
+		<h3>MySQL</h3>
+		<div class="info-pair">
+			<!-- another example of a relative path, pointing to a file in the website image folder -->
+			<img src="img/mysql.svg" alt="MySQL">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos error consectetur eaque ut reprehenderit cumque est voluptatem sint. Mollitia fugit aliquid quo voluptatem vero consequatur.</p>
+		</div>
+	</section>
+	<footer><a href="https://www.fordham.edu/info/25355/cis_courses">&copy; CISC2350 Spring 2017</a></footer>
+</body>
+</html>
