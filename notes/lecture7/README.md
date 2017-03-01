@@ -4,3 +4,4 @@ This lecture will focus on using some advanced features in Git, and leveraging C
 
 ## Table of Contents
 - [Git Branching](1-Branching.md)
+- [Responsive Web Development](2-Responsive.md)
