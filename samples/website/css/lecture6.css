@@ -1,0 +1,35 @@
+div.blue {
+	width: 350px;
+	height: 100px;
+	background-color: blue;
+	border-left: solid 2px black;
+}
+
+div.red {
+	background-color: red;
+	padding: 10px;
+	border: 1px solid orange ;
+	margin: 10px 30px 15px 20px;
+}
+
+p {
+
+}
+
+img {
+	float: right;
+}
+
+@media only print {
+	p {
+		font-size: 18px;
+	}
+
+	img {
+		display: none;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}
