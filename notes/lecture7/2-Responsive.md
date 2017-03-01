@@ -124,3 +124,5 @@ In general, you want your images to size themselves responsively within some ran
 [Google Web Fundamentals: Responsive Web Design Basics](https://developers.google.com/web/fundamentals/design-and-ui/responsive/#size_content_to_the_viewport)
 
 [Responsive Web Design: What It Is And How To Use It](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/)
+
+[« Back - Git Branching](1-Branching.md)

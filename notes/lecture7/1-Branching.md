@@ -83,7 +83,7 @@ The below resources are available to supplement the information you gained from 
 [Learn Git Branching](http://learngitbranching.js.org/)
 
 
-
+[Next - Responsive Web Development »](2-Responsive.md)
 
 
 
