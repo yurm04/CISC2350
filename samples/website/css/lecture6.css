@@ -33,3 +33,20 @@ img {
 		text-align: center;
 	}
 }
+
+html {
+	font-size: 1rem;
+}
+
+section div {
+	font-size: 1.5rem;
+}
+
+section div p {
+	font-size: 1em;
+}
+
+
+
+
+
