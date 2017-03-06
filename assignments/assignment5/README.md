@@ -16,14 +16,14 @@ The second part of this assignment will be to build on your resume website to ma
 - At least 2 media queries used.
 
 	```
-	@media screen only and (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		/*
 			styling for screens at least 768px wide
 			e.x. many tablets
 		 */
 	}
 
-	@media screen only and (min-width: 1020px) {
+	@media only screen and (min-width: 1020px) {
 		/*
 			styling for screens at least 1020px wide
 			e.x. laptops or desktops
