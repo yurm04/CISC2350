@@ -55,21 +55,21 @@ Building on what we covered last week, `@media` queries can be used to set condi
 	device specific styling (mobile first!)
  */
 
-@media screen only and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
 	/*
 		styling for screens at least 375px wide
 		e.x. iPhone 6 screens
 	 */
 }
 
-@media screen only and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	/*
 		styling for screens at least 768px wide
 		e.x. many tablets
 	 */
 }
 
-@media screen only and (min-width: 1020px) {
+@media only screen and (min-width: 1020px) {
 	/*
 		styling for screens at least 1020px wide
 		e.x. laptops or desktops
