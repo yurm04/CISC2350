@@ -1,0 +1,246 @@
+/* Noramlize */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: #231F20;
+}
+
+html {
+	font-size: .8rem;
+}
+
+/* Give our body a spacey background image */
+body {
+	background-image: url("../img/gradient-from-black.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Typography */
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Audiowide', cursive;
+	font-size: 3rem;
+	text-align: center;
+}
+
+h2, h3 {
+	font-family: 'Overpass Mono', monospace;
+	font-size: 2rem;
+	text-align: center;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+p, a {
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+/* Header */
+
+header {
+	padding: 10rem 1rem 10rem;
+	color: #fff;
+}
+
+header h1 {
+	margin: 0 0 1rem;
+}
+
+header h1:after {
+	content: '';
+	height: 1px;
+	width: 30%;
+	display: block;
+	margin: 1rem auto 0;
+	background-color: white;
+}
+
+header h2 {
+	margin: 0;
+}
+
+/* nav and footer */
+nav,
+footer {
+	background-color: #212A34;;
+}
+
+nav a,
+footer a {
+	color: #E3E7F0;
+	text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+	color: #E3E7F0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* nav */
+nav {
+	padding: 1rem;
+	text-align: center;
+	font-size: 1.2rem;
+	transition: background-color .2s;
+}
+
+nav:hover {
+	/* lighten up a bit on hover */
+	background-color: #374759;
+}
+
+nav ul {
+	list-style: none;
+	padding: 1.3em 0;
+	margin: 0;
+	/**
+	 * I want this to scroll horizontally if I have too many
+	 * list items to fit on my screen
+	 */
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+nav li {
+	display: inline;
+}
+
+/* select any li that is not the last child */
+nav li:not(:last-child) {
+	margin-right: 4rem;
+}
+
+nav a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* site sections */
+
+.section-info {
+	padding: 3rem 0;
+	margin: 0;
+	max-width: 1020px;
+	clear: both;
+}
+
+.section-info h3 {
+	margin-bottom: 2rem;
+}
+
+/* every even .section-info element */
+.section-info:nth-child(even) {
+	background-color: #FBFBFB;
+}
+
+/* the first .section-info and every odd .section-info */
+.section-info:nth-child(odd),
+.section-info:first-of-type {
+	background-color: #FFF;
+}
+
+/* section info */
+
+.info-pair {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 80%;
+}
+
+.info-pair img {
+	min-width: 100px;
+	max-width: 100%;
+	margin-bottom: 2rem;
+}
+
+/* footer */
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+	header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.section-info {
+		padding-left: 20%;
+		padding-right: 20%;
+		margin: 0;
+		max-width: 100%;
+		clear: both;
+	}
+}
+
+@media only screen and (min-width: 1020px) {
+	/* Alternate the sides of the image based on odd or even numbered section */
+	.section-info:nth-child(odd) .info-pair :first-child,
+	.section-info:nth-child(even) .info-pair :last-child {
+		float: right;
+	}
+
+	.section-info:nth-child(even) .info-pair :first-child {
+		float: left;
+	}
+
+	/* Make sure first section image is floated to the right */
+	.section-info:first-of-type .info-pair :first-child {
+		float: right;
+	}
+
+	.section-info:first-of-type .info-pair :last-child {
+		float: left;
+	}
+
+	.section-info h3 {
+		margin-bottom: 4rem;
+	}
+
+	.info-pair {
+		display: table;
+	}
+
+	.info-pair p,
+	.info-pair img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.info-pair p {
+		max-width: 50%;
+		min-width: 30%;
+		text-align: left;
+	}
+
+	.info-pair img {
+		margin-bottom: 0;
+		max-width: 15rem;
+	}
+}
+
+
+

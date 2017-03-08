@@ -1,0 +1,312 @@
+/**
+ * Everything in this space - outside of any media query -
+ * will be our global styling.  These styles will be active
+ * at all times.  Because we are taking a "mobile first" approach,
+ * this space should also include our mobile styling for smaller screens.
+ * Further down in our stylesheet, we will use @media queries to specify the
+ * styles for our larger screens.  For now, we will start with the
+ * small sizes and then work our way up to the large sizes with
+ * @media queries.
+ */
+
+
+/* Noramlize */
+html, body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: #231F20;
+}
+
+html {
+	/**
+	 * let's start off by setting our html font-size to a smaller
+	 * value on mobile.  Remember, our default font-size for html
+	 * is set by the browser or the user in px (usually 16px).
+	 * So keeping our html font-size in rem will make sure we are
+	 * setting a value relative to the browser size.
+	 */
+	/*font-size: .8rem;*/
+}
+
+/* Give our body a spacey background image */
+body {
+	background-image: url("../img/gradient-from-black.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Typography */
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Audiowide', cursive;
+	/**
+	 * let's also make this h1 smaller
+	 */
+	font-size: 3rem;
+	/*font-size: 2.5rem;*/
+	text-align: center;
+}
+
+h2, h3 {
+	font-family: 'Overpass Mono', monospace;
+	font-size: 2rem;
+	text-align: center;
+}
+
+p, a {
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+/* Header */
+
+header {
+	/**
+	 * put some padding up in here for mobile, but let's
+	 * bump this down for larger screens.
+	 */
+	padding: 10rem 0 10rem;
+	/*padding: 10rem 1rem 10rem*/
+	color: #fff;
+}
+
+header h1 {
+	margin: 0 0 1rem;
+}
+
+header h1:after {
+	content: '';
+	height: 1px;
+	width: 30%;
+	display: block;
+	/**
+	 * add some more space between our divider here
+	 */
+	margin: 1rem auto 0;
+	/*margin: 2rem auto 0;*/
+	background-color: white;
+}
+
+header h2 {
+	margin: 0;
+}
+
+/* nav and footer */
+nav,
+footer {
+	background-color: #212A34;;
+}
+
+nav a,
+footer a {
+	color: #E3E7F0;
+	text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+	color: #E3E7F0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* nav */
+nav {
+	padding: 1rem;
+	text-align: center;
+	font-size: 1.2rem;
+	transition: background-color .2s;
+}
+
+nav ul {
+	list-style: none;
+	padding: 1.3em 0;
+	margin: 0;
+	/**
+	 * I want this to scroll horizontally if I have too many
+	 * list items to fit on my screen
+	 */
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+nav li {
+	display: inline;
+}
+
+/* select any li that is not the last child */
+nav li:not(:last-child) {
+	margin-right: 4rem;
+}
+
+nav a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* site sections */
+
+.section-info {
+	/**
+	 * set this to no left/right padding for mobile
+	 * but set to 20% on @media 768px
+	 * @type {[type]}
+	 */
+	padding: 3rem 20%;
+	/*padding: 3rem 20%;*/
+	margin: 0;
+	max-width: 1020px;
+	clear: both;
+}
+
+.section-info h3 {
+	/**
+	 * make this smaller for mobile, but move this to
+	 * @media 1020px
+	 */
+	margin-bottom: 4rem;
+	/*margin-bottom: 2rem;*/
+}
+
+/* every even .section-info element */
+.section-info:nth-child(even) {
+	background-color: #FBFBFB;
+}
+
+/* the first .section-info and every odd .section-info */
+.section-info:nth-child(odd),
+.section-info:first-of-type {
+	background-color: #FFF;
+}
+
+/**
+ * we don't need to set floats or widths on mobile or tablet,
+ * so let's save these styles for desktop instead.  For mobile
+ * we can set everything to be center aligned and block displayed
+ *
+ * START CUT
+ */
+
+/* Alternate the sides of the image based on odd or even numbered section */
+.section-info:nth-child(odd) .info-pair :first-child,
+.section-info:nth-child(even) .info-pair :last-child {
+	float: right;
+}
+
+.section-info:nth-child(even) .info-pair :first-child {
+	float: left;
+}
+
+/* Make sure first section image is floated to the right */
+.section-info:first-of-type .info-pair :first-child {
+	float: right;
+}
+
+.section-info:first-of-type .info-pair :last-child {
+	float: left;
+}
+
+/**
+ * END CUT into @media 1020px
+ */
+
+/* section info */
+
+.info-pair {
+	margin: 0 auto;
+	/**
+	 * should be regular display so get rid of this and
+	 * put in @media 1020px
+	 */
+	display: table;
+
+	/**
+	 * set a text-align
+	 */
+	/*text-align: center;*/
+
+	/**
+	 * add a max-width to constrain how big this
+	 * div should get for the responsive image
+	 */
+	/*max-width: 80%*/
+}
+
+/**
+ * don't need this here but will want it in @media 1020px
+ */
+.info-pair p,
+.info-pair img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+ * don't need this here but will want it in @media 1020px
+ */
+.info-pair p {
+	max-width: 50%;
+	min-width: 30%;
+}
+
+.info-pair img {
+	/**
+	 * make this responsive, but set a min width on mobile
+	 * and a max for larger screens
+	 */
+	width: 150px;
+	/*
+	max-width: 100%;
+	min-width: 100px;
+	 */
+
+	/**
+	 * we want a margin-bottom for mobile, but remove it
+	 * for @media 1020px
+	 */
+}
+
+/* footer */
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+	header {
+		/**
+		 * we made this a larger padding on smaller screens
+		 */
+		/*padding-left: 0;
+		padding-right: 0;*/
+	}
+}
+
+@media only screen and (min-width: 1020px) {
+	/**
+	 * 1. paste section floats
+	 */
+
+	/**
+	 * 2. paste info-section display
+	 */
+}
+
+
+
+
