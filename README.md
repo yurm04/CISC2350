@@ -3,9 +3,9 @@
 This repo is meant to be a companion for the Fordham University class CISC 2350 Information & Web Programming. It will be the main source for all assignments, lecture notes, projects, and general class materials.  To get started, please read the helpful references below and set up your personal `assignments` repositories.
 
 ## Table of Contents
-- [Assignments and Submission](#assignments)
-- [Notes and Resources](#notes)
-- [Code Samples](#code)
+- [Assignments Assignmnet Prompts](assignments/)
+- [Notes and Resources](notes/)
+- [Code Samples](code/)
 
 ## <a name="assignments"></a>Assignment Prompts and submissions
 All assignment prompts can be found in this repo's [`assignments` directory](assignments).  Each assignment is labeled with the prompt number or project name, and contains a `README.md` file with the details for that week's assignment.
