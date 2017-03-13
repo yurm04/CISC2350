@@ -229,6 +229,19 @@ ___
 		text-decoration: none;
 	}
 	```
+___
+- Class and ID names should be delimiter separated by a `-` for names with multiple words.  Names should also (usually) be all lowercase.
+	```css
+	/* delimiter separated - use this format */
+	.body-text { ... }
+	.col-two { ... }
+	.lg-heading { ... }
+
+	/* camel case */
+	.bodyText { ... }
+	.colTwo { ... }
+	.lgHeading { ... }
+	```
 
 ## Developer Tools
 Most modern browsers come with a suite of helpful tools that aid web development.  These tools give you insight into your HTML, CSS, JavaScript, and many other technologies.

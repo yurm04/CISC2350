@@ -114,6 +114,7 @@ a:hover {
 ```
 ## Psuedo Elements
 A [psuedo element](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements#Pseudo-elements) is similar to a psuedo class, but with one major distinction:
+
 1. Psuedo elements use the `::` characters before their keyword.
 2. They select a certain part of the matched element.
 
