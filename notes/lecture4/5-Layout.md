@@ -63,4 +63,7 @@ header {
 }
 ```
 
+---
+
 [« Back - CSS Box Model](4-Box.md) | [Next - Structural HTML »](6-MoreHtml.md)
+

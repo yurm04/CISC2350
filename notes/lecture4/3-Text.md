@@ -43,5 +43,7 @@ p {
 }
 ```
 
+---
+
 [« Back - Units & Values](2-Units.md) | [Next - CSS Box Model »](4-Box.md)
 

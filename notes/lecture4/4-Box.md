@@ -54,4 +54,6 @@ div.two {
 }
 ```
 
+---
+
 [« Back - Styling Text](3-Text.md) | [Next - Layout & Positioning »](5-Layout.md)

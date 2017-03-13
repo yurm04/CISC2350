@@ -97,4 +97,5 @@ img {
 }
 ```
 
+---
 [« Back - Selectors](1-Selectors.md) | [Next - Styling Text »](3-Text.md)
