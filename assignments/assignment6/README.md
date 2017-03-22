@@ -7,7 +7,7 @@ Follow the lecture notes to download, install, and configure MAMP on your machin
 ## Part 2:  Getting started with PHP
 Create an `index.php` file in your assignment8 folder (this should be set as your document root in MAMP).  In your `index.php` file create variables for your name, your birthday, 3 of your favorite foods, and 4 classes (this should sound familiar, think back to assignment1).  Make sure you are using semantically correct HTML for your file (e.x. Heading for your name, ordered list for the foods, etc.).
 
-Assignment 8 must meet the following requirements:
+Assignment 6 must meet the following requirements:
 
 - Created in and pushed to your `master` branch.
 - File name `index.php`.
@@ -27,4 +27,4 @@ Assignment 8 must meet the following requirements:
 ## Bonus
 This week there is a chance to earn a few more points.  Visit https://pages.github.com/ and read up on what GitHub Pages are.  The TLDR; is it is a way to host a live website through a GitHub repo.
 
-Make a Github Page that hosts your resume website.  Submit the link of your GitHub page (not the repo) along with your Assignment 8 link, and **earn +5pts** on Assignment 8.
+Make a Github Page that hosts your resume website.  Submit the link of your GitHub page (not the repo) along with your Assignment 6 link, and **earn +5pts** on Assignment 6.
