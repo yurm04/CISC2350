@@ -31,21 +31,28 @@ For our web server, a *port* is what listens for requests from the client.  We c
 
 ![](docs/mamp-port-80.png)
 
-### Web Server Setting
+### MAMP Web Server Settings
 MAMP actually supports different web servers (Apache and NGINX).  Apache should be our chosen web server by default, so let's not change that.
 
 ![](docs/mamp-web-server.png)
 
-You'll notice the second setting in this tab is the document root.  The *document root* is the location or path of your *website directory*.  Recall that your website directory is the directory that holds all of your files that make up your website.  So by setting your *document root* you are setting the location to point to your *website directory*.  By default, your document root should be set to `/Applications/MAMP/htdocs/`.
+You'll notice the second setting in this tab is the document root.  The *document root* is the location or path of your *website directory*.  Recall that your website directory is the directory that holds all of your files that make up your website.  So by setting your *document root* you are setting the location to point to your *website directory*.  By default, your document root should be set to `/Applications/MAMP/htdocs/` (might differ on windows).
 
 We can change the location of our document root by clicking the little folder next to the "Document Root" setting in MAMP.  This will let us "start a new document root" and prompt us to navigate to the new location using the Finder/File Explorer. In the example below, I changed my document root to the CISC2350 sample website file that can be found at `cisc2350/samples/website/`.
 
 ![](docs/mamp-doc-root.png)
 
-Now, whenever I start my web server and navigate to the server address [`http://localhost:80`](http://localhost:80) our web server will know where to find serve the website files from (the document root).
+Now, whenever I start my web server and navigate to the server address [`http://localhost:80`](http://localhost:80) our web server will know where to *serve* the website files from (the document root).
+
+**NOTE** It is crucial that you set up your MAMP application as quickly as possible and test that it is working.  If you run in to problems, it could be very time consuming to debug the issue.  Please make sure to give yourself enough time to reach out for help if needed before the assignment is due.
 
 
+## Resources
+*Learning PHP, MySQL, JavaScript & CSS* - Chapter 2
 
+___
+
+[Next - Intro to PHP »](3-PHP.md)
 
 
 

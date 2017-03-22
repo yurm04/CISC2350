@@ -34,3 +34,6 @@ When creating dynamic web pages, this process is slightly more complicated on th
 ## Resources
 *Learning PHP, MySQL, JavaScript & CSS* - Chapter 1
 
+___
+
+[Next - Server Side Requirements »](2-Reqs.md)
