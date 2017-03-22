@@ -93,7 +93,7 @@ Here are a few things to note about your PHP code to always keep in mind:
 ___
 
 [Next - Intro to PHP »](4-Variables.md)
--
+
 [« Back - Server Side Requirements](2-Reqs.md)
 
 
