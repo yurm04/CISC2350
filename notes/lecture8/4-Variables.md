@@ -56,5 +56,8 @@ Creating constants differs slightly from regular variables:
 - Constants must be declared and initialized using the [`define()`](http://php.net/manual/en/function.define.php) function. `define()` requires the name of your constant, followed by the value you are assigning it.
 
 
+___
+
+[« Back - PHP Variables](3-Variables.md)
 
 
