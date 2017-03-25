@@ -25,6 +25,6 @@ Assignment 6 must meet the following requirements:
 **Please make sure you start the assignment early.  Give yourself enough time to ask for help and debug any errors or MAMP issues**
 
 ## Bonus
-This week there is a chance to earn a few more points.  Visit https://pages.github.com/ and read up on what GitHub Pages are.  The TLDR; is it is a way to host a live website through a GitHub repo.
+This week there is a chance to earn a few more points.  Visit https://pages.github.com/ and read up on what GitHub Pages are.  The TL;DR is it is a way to host a live website through a GitHub repo.
 
 Make a Github Page that hosts your resume website.  Submit the link of your GitHub page (not the repo) along with your Assignment 6 link, and **earn +5pts** on Assignment 6.
