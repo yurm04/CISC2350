@@ -5,7 +5,7 @@ The purpose of this assignment is to get set up with your new MAMP development e
 Follow the lecture notes to download, install, and configure MAMP on your machine.  Make sure you are setting the MAMP document root to your desired file path.
 
 ## Part 2:  Getting started with PHP
-Create an `index.php` file in your assignment8 folder (this should be set as your document root in MAMP).  In your `index.php` file create variables for your name, your birthday, 3 of your favorite foods, and 4 classes (this should sound familiar, think back to assignment1).  Make sure you are using semantically correct HTML for your file (e.x. Heading for your name, ordered list for the foods, etc.).
+Create an `index.php` file in your assignment6 folder (this should be set as your document root in MAMP).  In your `index.php` file create variables for your name, your birthday, 3 of your favorite foods, and 4 classes (this should sound familiar, think back to assignment1).  Make sure you are using semantically correct HTML for your file (e.x. Heading for your name, ordered list for the foods, etc.).
 
 Assignment 6 must meet the following requirements:
 
