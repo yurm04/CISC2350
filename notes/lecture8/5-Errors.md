@@ -4,7 +4,7 @@ We've already seen what will happen to our website if we have any PHP errors in 
 ## Linters
 A text editor linter is a program or package you install in your text editor that can help you catch errors as you code.  As you code in your editor (Atom, Sublime, etc.) if the linter notices that you made an error, it let's you know where and what the error is.  The image below shows my linter telling me that there is a `parse error` on `line 23` of my file (I forgot the semi colon at the end of `line 22`!).  Linters will vary by editor, but they all generally perform the same function.
 
-![](doc/inter.png)
+![](docs/linter.png)
 
 ## Error Logs
 MAMP (and any reliable server) will have some kind of error tracking that you can reference when you are tracking down a bug.  These files are called `error logs`, and will contain any error messages, warnings, notices, and debugging that your website produces.  For MAMP, this error log can be found in:
