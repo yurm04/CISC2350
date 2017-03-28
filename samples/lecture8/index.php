@@ -5,31 +5,31 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<!-- html comment -->
-
 		<?php
-			// php comment
-
-			# another comment
-
-			/*
-				another
-				comment
-				yay!
-			 */
-
-			$name = "Yurm";
-			$age = 26;
-			$city = $name . 26;
-			$blah;
-			$constant = 'MY_NAME';
-			define("MY_NAME", "Yuraima");
-			$name = 'John';
+		// single line comment
+		# another single line comment
+		/*
+			here's a comment
+			on some lines
+			and some more
+		 */
+		$name = 'Yuraima';
+		$_name1 = 'Estevez';
+		$last_name = 'blach';
+		$last_name = 'something';
+		$lastName = '';
+		$pi = 5;
+		$pi = "five" . $pi;
+		$constant = "MY_NAME";
+		define($constant, "Yuraima")
 		 ?>
-		<h1><?php echo "Hello!" ?></h1>
-		<h2><?php echo $name . " " . $city . ' ' . $age; ?></h2>
-		<h3><?php echo $age ?></h3>
-		<h3><?php echo $city ?></h3>
-		<h3><?php echo MY_NAME; ?></h3>
+		 echo "hello world"
+		<h1><?php echo MY_NAME; ?></h1>
+		<h2><?php echo "Bye"; ?></h2>
+		<?php
+
+		echo "hello";
+
+		 ?>
 	</body>
 </html>
