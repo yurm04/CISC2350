@@ -25,7 +25,7 @@ Let's have a look at the MAMP preferences, and dig into the two settings we migh
 
 ### Port Setting
 
-![](doc/mamp-port.png)
+![](docs/mamp-port.png)
 
 For our web server, a *port* is what listens for requests from the client.  We can specify which *port number* we want our Apache web server to listen to when we make requests for our website pages.  Above, we see that the Apache port in MAMP is listening to port 8888. However, regular web requests tend to default to port 80, so let's push the button that says `Set Web & MySQL ports to 80 & 3306` to update the port that Apache will listen to.
 
