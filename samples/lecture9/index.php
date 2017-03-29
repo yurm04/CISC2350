@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lecture 9</title>
+	<style>
+		section {
+			margin-bottom: 3rem;
+		}
+	</style>
 </head>
 <body>
 	<h1>PHP Features</h1>
 	<hr>
+
+	<!-- STRINGS -->
 	<section style="display: none">
 		<h2><?php echo 'Strings' ?></h2>
 		<hr>
@@ -28,6 +35,7 @@
 		?>
 	</section>
 
+	<!-- INTEGERS -->
 	<section style="display:none">
 		<h2><?php echo 'Integers' ?></h2>
 		<hr>
@@ -39,6 +47,7 @@
 		?>
 	</section>
 
+	<!-- FLOATS -->
 	<section style="display:none">
 		<h2><?php echo 'Floats' ?></h2>
 		<hr>
@@ -50,6 +59,7 @@
 		?>
 	</section>
 
+	<!-- BOOLEANS -->
 	<section style="display: none">
 		<h2><?php echo 'Booleans' ?></h2>
 		<hr>
@@ -63,6 +73,7 @@
 		<small>^^^ (a boolean FALSE in PHP is actually just an empty value)</small>
 	</section>
 
+	<!-- NULL -->
 	<section style="display: none;">
 		<h2><?php echo 'NULL' ?></h2>
 		<hr>
@@ -77,6 +88,7 @@
 		<p>Oscars for Leo in 2016: <?php echo $leo_oscars; ?></p>
 	</section>
 
+	<!-- INDEXED ARRAYS -->
 	<section style="display: none;">
 		<h2><?php echo 'Indexed Arrays' ?></h2>
 		<hr>
@@ -103,7 +115,8 @@
 		 ?>
 	</section>
 
-	<section style="display: block;">
+	<!-- ASSOCIATIVE ARRAYS -->
+	<section style="display: none;">
 		<h2><?php echo 'Associative Arrays' ?></h2>
 		<hr>
 		<h3>Types of Languages we've learned so far:</h3>
@@ -129,5 +142,92 @@
 		echo "The database langauage we will learn is <strong>${language_types["database"]}</strong>.";
 		 ?>
 	</section>
+
+	<!-- MODULO OPERATOR -->
+	<section style="display:none;">
+		<h2><?php echo 'Modulo Operator (%)' ?></h2>
+		<hr>
+		<?php
+		$remainder = 5 % 2; // 1
+		echo "5 % 2 = $remainder";
+		?>
+	</section>
+
+	<!-- INC. ASSIGNMENT OPERATOR -->
+	<section style="display:none;">
+		<h2><?php echo 'Increment Assignment Operator (+=)' ?></h2>
+		<hr>
+		<?php
+		$value = 5;
+		$value += 2; // same as $value = $value + 2
+		?>
+		<p>$value = 5;</p>
+		<p>$value += 2;</p>
+		<p>$value is now <?php echo $value; ?></p>
+	</section>
+
+	<!-- INCREMEMENT OPERATOR -->
+	<section style="display:none;">
+		<h2><?php echo 'Increment Operator (++)' ?></h2>
+		<h3>Post Increment</h3>
+		<hr>
+		<?php
+		$value_inc = 5;
+		?>
+		<p><?php echo 'Returns the value, then increments:  ' . $value_inc++; // 5 ?></p>
+		<p><?php echo 'Value after incremented:  ' . $value_inc; // 6 ?></p>
+
+		<h3>Pre Increment</h3>
+		<hr>
+		<?php
+		$value_inc = 5;
+		?>
+		<p><?php echo 'Increments the value, then returns it:  ' . ++$value_inc; // 6 ?></p>
+		<p><?php echo 'Value after incremented:  ' . $value_inc; // 6 ?></p>
+	</section>
+
+	<!-- IF STATEMENTS -->
+	<section style="display:block;">
+		<h2><?php echo 'if Statements' ?></h2>
+		<?php
+		$age = 21;
+
+		if ($age >= 21) {
+			echo "You can legally Drink!";
+		}
+		?>
+	</section>
+
+	<!-- ELSE STATEMENTS -->
+	<section style="display:block;">
+		<h2><?php echo 'else Statements' ?></h2>
+		<?php
+		$age = 19;
+
+		if ($age >= 21) {
+			echo "You can legally Drink!";
+		} else {
+			echo "Sorry, no beer for you";
+		}
+		?>
+	</section>
+
+	<!-- ELSEIF STATEMENTS -->
+	<section style="display:block;">
+		<h2><?php echo 'elseif Statements' ?></h2>
+		<?php
+		$age = 21;
+		$citizen = false;
+
+		if ($age >= 18 && $citizen) {
+			echo "You can legally vote!";
+		} elseif ($age >= 18 && $citizen === FALSE) {
+			echo "Sorry, you must be a citizen to vote";
+		} else {
+			echo "Sorry, even though you are a citizen you must be 18 years old or over to vote";
+		}
+		?>
+	</section>
+
 </body>
 </html>

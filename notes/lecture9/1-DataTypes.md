@@ -102,3 +102,7 @@ $language_types["database"] = "MySQL";
 echo $language_types["database"]; // MySQL
 ```
 
+
+___
+
+[Next - Operators »](2-Operators.md)
