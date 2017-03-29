@@ -90,6 +90,7 @@ Here are a few things to note about your PHP code to always keep in mind:
 [Hacking with PHP](http://www.hackingwithphp.com/2/0/0/introducing-php) - Sections [2.1](http://www.hackingwithphp.com/2/1/0/history), [2.2](http://www.hackingwithphp.com/2/2/0/advantages-of-php), and [2.6](http://www.hackingwithphp.com/2/6/0/how-php-is-written)
 
 [Codecademy: PHP](https://www.codecademy.com/learn/php)
+
 ___
 
 [Next - Intro to PHP »](4-Variables.md)

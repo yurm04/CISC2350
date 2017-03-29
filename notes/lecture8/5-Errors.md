@@ -20,4 +20,7 @@ When You install PHP on your computer, it came with its own settings file that a
 
 You will see that there are several options we can tinker with to customize our PHP.  **PLEASE DO NOT MODIFY ANYTHING IN THIS FILE IF I HAVE NOT EXPLICITLY INSTRUCTURED YOU TO**.  One change we can make to this file to make debugging a bit easier is on `line 277` with the setting `display_errors`.  this line item controls whether or not error are displayed in the browser (instead of a white screen).  If we switch it to `display_errors = On`, we will be able to immediately see the error on our page in the browser when they occur.
 
+___
+
+[« Back - Intro to PHP](3-PHP.md)
 

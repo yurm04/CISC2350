@@ -23,9 +23,11 @@
 		$constant = "MY_NAME";
 		define($constant, "Yuraima")
 		 ?>
+
 		 echo "hello world"
 		<h1><?php echo MY_NAME; ?></h1>
 		<h2><?php echo "Bye"; ?></h2>
+
 		<?php
 
 		echo "hello";

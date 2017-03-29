@@ -7,3 +7,4 @@ The notes (or slides) for each lecture can be found in this directory.  Each lec
 - [Lecture 6: Web Dev Topics](lecture6/README.md)
 - [Lecture 7: Git Branching & Responsive Web](lecture7/README.md)
 - [Lecture 8: Server Side Programming](lecture8/README.md)
+- [Lecture 9: Programming in PHP](lecture9/README.md)
