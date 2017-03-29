@@ -7,7 +7,7 @@ $age = 26; // integer
 $pi = 3.14; // float (AKA double)
 ```
 
-Below are the other data types that PHP has available.  We will be learning the first 6 types in this course.
+Below are other data types that PHP has available.  PHP has other data types available not listed here, but these are the ones we will focus on for now.
 
 ## String
 A sequence of characters such as: "I like PHP." They are typically contained in single quotes and double quotes, but there are other ways to represent them as well.
@@ -26,6 +26,31 @@ echo 'My name is ' . $name . ', I live in ' . $city;
 echo "My name is $Yuraima, I live in $city";
 ```
 
+### The concatenation operator `.`
+The concatenation operator is a special character in PHP `.` used to combine strings.
+
+```php
+echo 'Hello' . ' World!'; // concatenating string literals
+```
+
+The concatenation operator can also be used to combine variables to create strings.
+
+```php
+$name = "Yuraima"; // string variable
+$city = "New York"; // string variable
+
+echo 'My name is ' . $name . ', I live in ' . $city;
+```
+
+If trying to concatenate integers or floats with strings, the concatenation operator will convert the non-string to a string automatically.
+
+```php
+$name = "Yuraima"; // string variable
+$age = 26; // integer variable
+
+echo 'My name is ' . $name . ', I am ' . $age . ' years old.';
+```
+
 ## Integer
 A whole number without a decimal point, like 10. They can hold positive or negative values.
 
@@ -35,7 +60,7 @@ $student_loan_debt = -1000000;
 ```
 
 ## Floats
-A number with precision or with a decimal point: 3.14. They can be represented in scientific notation as well. As always, floating-point numbers have limited precision.  These too can be positive or negative in value.
+A number with precision or with a decimal point: `3.14`. Floating-point numbers have limited precision.  These can be positive or negative in value.
 
 ```php
 $price = 10.77; // cheese pizza and a large soda from Panucci's pizza, same as my pin number
@@ -106,3 +131,5 @@ echo $language_types["database"]; // MySQL
 ___
 
 [Next - Operators »](2-Operators.md)
+
+[« Back - Table of Contents](README.md)
