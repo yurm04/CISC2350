@@ -59,6 +59,7 @@ Creating constants differs slightly from regular variables:
 ___
 
 [Next - Errors »](5-Errors.md)
+
 [« Back - Intro to PHP](3-PHP.md)
 
 
