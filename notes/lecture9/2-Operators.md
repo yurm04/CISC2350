@@ -38,7 +38,7 @@ Returns the remainder after division
 $remainder = 5 % 2; // 1
 ```
 
-### `***`
+### `**`
 Raises the power of the operand on the left to the power of the operand on the right
 
 ```php

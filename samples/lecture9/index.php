@@ -11,6 +11,7 @@
 </head>
 <body>
 	<h1>PHP Features</h1>
+	<p>This file contains sample code to go along with lecture 9.</p>
 	<hr>
 
 	<!-- STRINGS -->
@@ -199,7 +200,7 @@
 	</section>
 
 	<!-- ELSE STATEMENTS -->
-	<section style="display:block;">
+	<section style="display:none;">
 		<h2><?php echo 'else Statements' ?></h2>
 		<?php
 		$age = 19;
@@ -213,7 +214,7 @@
 	</section>
 
 	<!-- ELSEIF STATEMENTS -->
-	<section style="display:block;">
+	<section style="display:none;">
 		<h2><?php echo 'elseif Statements' ?></h2>
 		<?php
 		$age = 21;
