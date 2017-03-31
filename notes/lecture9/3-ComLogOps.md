@@ -117,7 +117,7 @@ Returns TRUE if a value is _not_ TRUE. It makes it the opposite of it’s curren
 
 ```
 $isCute = TRUE;
-!isCute; // FALSE
+!$isCute; // FALSE
 
 $isNice = TRUE;
 !$isNice; // FALSE

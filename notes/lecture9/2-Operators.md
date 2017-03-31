@@ -70,7 +70,7 @@ Subtracts the value on the left to the value on the right and assigns the result
 ```php
 $value = 5;
 $value -= 2; // same as $value = $value - 2
-echo $value; // 2
+echo $value; // 3
 ```
 
 ### `*=`
@@ -117,7 +117,7 @@ echo $value; // 1
 
 	```php
 	$value = 5;
-	echo ++$var; // 5
+	echo ++$var; // 6
 
 	echo $var; // 6
 	```
@@ -129,7 +129,7 @@ echo $value; // 1
 	$value = 5;
 	echo $var--; // 5
 
-	echo $var; // 6
+	echo $var; // 4
 	```
 
 
@@ -137,9 +137,9 @@ echo $value; // 1
 
 	```php
 	$value = 5;
-	echo --$var; // 5
+	echo --$var; // 4
 
-	echo $var; // 6
+	echo $var; // 4
 	```
 ___
 
