@@ -108,7 +108,7 @@ switch ($animal) {
 }
 
 /**
- * the sentence "echo "A group of dogs is called a pack" will be displayed
+ * the sentence "A group of dogs is called a pack" will be displayed
  */
 ```
 

@@ -1,7 +1,8 @@
-# Loops, Functions, and Forms
-This week we will continue exploring the available features of the PHP language, as well as handling user input on our web pages.
+# Loops, Functions, and Collaboration
+This week we will continue exploring the control structures available in PHP, introduce how to use and create PHP functions, and get into GitHub collaboration with pull requests.
 
 1. [Loops](1-Loops.md)
+2. [Functions](2-Functions.md)
 
 ## Resources
 

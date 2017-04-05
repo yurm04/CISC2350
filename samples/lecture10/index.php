@@ -194,8 +194,49 @@
 		?>
 	</section>
 
+	<!-- USER DEFINED FUNCTIONS -->
+	<section style="display:block">
+		<h2>User defined functions</h2>
+		<hr>
 
+		<?php
+			// declare the function
+			function say_hello() {
+				echo "<p>Hello, World!</p>";
+			}
 
+			// call the function
+			say_hello();
+
+			// ...Do some other stuff in our code
+			echo '...';
+
+			// call the function again
+			say_hello();
+
+		?>
+	</section>
+
+	<!-- FUNCTION PARAMETERS AND ARGUMENTS  -->
+	<section style="display:block">
+		<h2>Function Parameters and Arguments</h2>
+		<hr>
+
+		<?php
+			// Your function can take multiple parameters as a comma separated list.  Order matters for parameters when passed
+			function custom_greeting($greeting, $name) {
+				echo "<p>$greeting, $name</p>";
+			}
+
+			// call the function, and pass it the argument that corresponds with the parameter declared.
+			custom_greeting('Hello', 'Yuraima');
+
+			// don't forget, order matters when passing your arguments to your functions
+			custom_greeting('Howdy', 'partner');
+
+			custom_greeting('Wassup', 'losers');
+		?>
+	</section>
 
 </body>
 </html>
