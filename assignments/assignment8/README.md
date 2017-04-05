@@ -5,12 +5,12 @@ This week's assignment will be building on assignment 7 and incorporate the use 
 Using the logic you built last week for determining a student's classification, create a function that:
 
 - is called `get_student_year`.
-- Has 1 parameter:  the number of credits a student has earned
+- Accepts one parameter:  the number of credits a student has earned
 - Using the credits passed to the function, will calculate and return what year the student is classified as.
 
 Create a second function called `get_grad_credits` that:
 
-- accepts 1 parameter: the number of credits a student has earned
+- accepts one parameter: the number of credits a student has earned
 - Calculates and returns the number of credits left to earn in order to graduate from Fordham
 
 Create a third function called `get_next_level` that does the following:
@@ -19,7 +19,7 @@ Create a third function called `get_next_level` that does the following:
 - Returns a data structure that contains _both_ the number of credits needed to move up to the next classification, and the next classification that the student can move up to
 
 ## Part 2: Loops
-Using the functions you have created in part 1 use the following data to print out each students:
+Using the functions you have created in part 1 use the following data to print out each student's:
 
 - name (in proper case - first letter of name capitalized)
 - credits earned
@@ -28,14 +28,14 @@ Using the functions you have created in part 1 use the following data to print o
 - the next classification to move up to (or graduate)
 - the number of credits needed to move up to the next classification
 
-Make sure to do the above **ALL WITHIN A LOOP** (don't just manually print out each name and info associated data).  Use the below data structure containing student information as your source (copy and paste it exactly into your code).
+Make sure to do the above **ALL WITHIN A LOOP** (don't just manually print out each name and associated data).  Use the below data structure containing student information as your source (copy and paste it exactly into your code).
 
 ```php
 $students = array(
 	'rick' => 124,
 	'morty' => 24,
 	'summer' => 48,
-	'beth' => 75
+	'beth' => 75,
 	'jerry' => 32,
 	'bird_man' => 97
 );
