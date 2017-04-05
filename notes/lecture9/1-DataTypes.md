@@ -23,7 +23,7 @@ $city = "New York";
 echo 'My name is ' . $name . ', I live in ' . $city;
 
 // double quotes will interpret variable
-echo "My name is $Yuraima, I live in $city";
+echo "My name is $name, I live in $city";
 ```
 
 ### The concatenation operator `.`
