@@ -42,7 +42,7 @@ $students = array(
 ```
 
 ## Part 3: Built-in Functions
-Use 2 built-in PHP functions in you program to format your content correctly.  **HINT** The names of your students should follow proper casing and should not contain special characters (`_` or `-`).  Use built-in functions to ensure that your student names meet this requirement.
+Use 2 built-in PHP functions in your program to format your content correctly.  **HINT** The names of your students should follow proper casing and should not contain special characters (`_` or `-`).  Use built-in functions to ensure that your student names meet this requirement.
 
 ## Grading Breakdown
 - Part 1: 35pts

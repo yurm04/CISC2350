@@ -6,6 +6,7 @@ This repo is meant to be a companion for the Fordham University class CISC 2350 
 - [Assignments Assignmnet Prompts](assignments/)
 - [Notes and Resources](notes/)
 - [Code Samples](code/)
+- [Contributing](contribute/)
 
 ## <a name="assignments"></a>Assignment Prompts and submissions
 All assignment prompts can be found in this repo's [`assignments` directory](assignments).  Each assignment is labeled with the prompt number or project name, and contains a `README.md` file with the details for that week's assignment.
@@ -22,3 +23,6 @@ There will often be live coding samples demonstrated during our scheduled class 
 - Section `e01` is the Monday night Rose Hill class.
 
 So, the code samples for the Lincoln Center, lecture1 session can be found in the `samples/lecture1/c01` directory.
+
+## <a name="contribute"></a>Contributing
+This repo is open source and all are welcome to contribute :tada:  Please review the repo [contributing guide](CONTRIBUTING.md) before opening an issue, submitting a pull request, or participating in any open discussions.
