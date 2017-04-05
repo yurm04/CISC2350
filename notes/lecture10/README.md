@@ -3,6 +3,7 @@ This week we will continue exploring the control structures available in PHP, in
 
 1. [Loops](1-Loops.md)
 2. [Functions](2-Functions.md)
+3. [Contributing to Projects on GitHub](3-Functions.md)
 
 ## Resources
 

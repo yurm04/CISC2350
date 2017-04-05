@@ -238,5 +238,48 @@
 		?>
 	</section>
 
+	<!-- FUNCTION RETURN VALUES  -->
+	<section style="display:block">
+		<h2>Function Return Values</h2>
+		<hr>
+
+		<?php
+			// function returns a value when it is called using the 'return' keyword
+			function get_full_name($first_name, $last_name) {
+				$full_name = "$first_name $last_name";
+
+				return $full_name;
+			}
+
+			// the function return value is then saved to the variable
+			$name = get_full_name('Princess Consuela', 'Bananahammock');
+
+			// and we can use the variable elsewhere in our code
+			custom_greeting('Hello', $name);
+		?>
+	</section>
+
+	<!-- BUILT-IN FUNCTIONS  -->
+	<section style="display:block">
+		<h2>Built in Functions</h2>
+		<hr>
+
+		<?php
+			// should return the first and last name, with proper casing
+			function get_proper_name($first_name, $last_name) {
+				$full_name = "$first_name $last_name";
+
+				// using the built-in php function we can upper case the name and get the return value.
+				$proper_case = ucwords($full_name);
+
+				// return the proper case when called
+				return $proper_case;
+			}
+
+			$name = get_proper_name('yuraima', 'estevez');
+			echo $name; // Yuraima Estevez
+		?>
+	</section>
+
 </body>
 </html>

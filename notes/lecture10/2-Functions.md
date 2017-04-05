@@ -92,3 +92,64 @@ custom_greeting('Wassup', 'losers');
 
 Functions can accept a number of different data types and data structures as arguments (strings, integers, arrays, etc.). Functions can even accept other functions as arguments. You can create very simple or very complex functions using what you have learned in this section.
 
+## Returning a value
+It is often helpful for a function to return a value when called. One purpose of this is to use the value that is returned by the function and assign it to a variable that can be used later on. Here is an example of returning a value from a function:
+
+```php
+// function returns a value when it is called using the 'return' keyword
+function get_full_name($first_name, $last_name) {
+	$full_name = "$first_name $last_name";
+
+	return $full_name;
+}
+```
+
+By using the keyword `return` and the value we want returned from our function, we can have our functions return something when called.
+
+```php
+// function returns a value when it is called using the 'return' keyword
+function get_full_name($first_name, $last_name) {
+	$full_name = "$first_name $last_name";
+
+	return $full_name;
+}
+
+// the function return value is then saved to the variable
+$name = get_full_name('Princess Consuela', 'Bananahammock');
+
+// and we can use the variable elsewhere in our code
+custom_greeting('Hello', $name); // Hello, Princess Consuela Bananahammock
+```
+
+## Built-in functions
+Along with user defined functions, PHP has many built-in functions available for use.  Using built-in functions is no different than using our own functions: they still excute some block of reusable code, can take arguments, and return values when called.  Let's take a look at a built-in PHP function, [`ucwords`](http://php.net/manual/en/function.ucwords.php).
+
+```php
+// should return the first and last name, with proper casing
+function get_proper_name($first_name, $last_name) {
+	$full_name = "$first_name $last_name";
+	
+	// using the built-in php function we can upper case the name and get the return value.
+	$proper_case = ucwords($full_name);
+}
+
+$name = get_proper_name('yuraima', 'estevez');
+echo $name; // Yuraima Estevez
+```
+
+When using built-in functions, make sure you know exactly what you expect the function to do, the arguments it can take, and the return values it provides (if any).  All of this information can be found in the official PHP documentation.  Below are a few useful functions and links to their documentation.  This list is only to give you a push in the right direction of where to start looking for functions, and getting familiar with the documentation.
+
+- [`substr`](http://php.net/manual/en/function.substr.php)
+- [`strlen`](http://php.net/manual/en/function.strlen.php)
+- [`str_replace`](http://php.net/manual/en/function.str-replace.php)
+- [`strtolower`](http://php.net/manual/en/function.strtolower.php)
+- [`strtoupper`](http://php.net/manual/en/function.strtoupper.php)
+- [`count`](http://php.net/manual/en/function.count.php)
+- [`in_array`](http://php.net/manual/en/function.in-array.php)
+
+
+___
+
+[Next - Contributing to GitHub Projects »](3-Contributing.md)
+[« Back - Loops](1-Loops.md)
+
