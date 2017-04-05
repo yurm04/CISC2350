@@ -1,5 +1,5 @@
 # Assignment 8
-This week's assignment will be building on assignment 7 and incorporate the use of loops and functions
+This week's assignment will be building on assignment 7 and incorporate the use of loops and functions.  You will need the same [Academic Progress](http://216.230.117.32/section10/section184/section193/index.html) chart from last week to complete the assignment.
 
 ## Part 1: Functions
 Using the logic you built last week for determining a student's classification, create a function that:
