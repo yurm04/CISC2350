@@ -50,5 +50,67 @@ if ($age >= 18 && $citizen) {
 }
 ```
 
+## `switch` statements
+Similar to an if statement, a switch statement is used to perform different sets of actions based on the result of a condition. A switch statement is useful when you want to compare a variable or expression with many different values and then execute a particular piece of code that is associated with a specific value. *It is important to note that with a switch statement condition, we are testing for equality. We are not making a comparison or checking for a Boolean value*.
+
+The basic format of a `switch` statement looks like the following:
+
+```php
+// psuedocode
+switch (value) {
+	case value1:
+		statement;
+		break;
+
+	case value2:
+		statement;
+		break;
+
+	case value3:
+		statement;
+		break;
+
+	default:
+		statement;
+}
+```
+
+The important keywords are
+
+1. `switch` indicating that we are beginning our switch statement.  The `switch` command evaluates the expression in the set of parenthesis, followed by the open and close curly braces that contain the conditional cases.
+2. `case` The value of the expression/variable (`value`) is compared to the value of each `case`.  If a `case` matches, the code that corresponds to it will be executed.
+3. `break` let's our `switch` statement know when to finish executing the statements of the `case` that was run.  Make sure to end your `case` statements with the `break` keyword!  Without `break`, your code will continue to run to the next case statement block as well.
+4. `default` (optional) if none of the cases are a match, then we can include a `default` case to be executed instead.
+
+```php
+$animal = 'dog';
+
+switch ($animal) {
+	case 'dog':
+		echo "A group of dogs is called a pack";
+		break;
+
+	case 'otter':
+		echo "A group of otters is called a romp";
+		break;
+
+	case 'porcupine':
+		echo "A group of porcupine is called a prickle";
+		break;
+
+	case 'hyena':
+		echo "A group of hyenas is called a cackle";
+		break;
+
+
+	default:
+		echo "A group of animals is called Rose Hill Students";
+}
+```
+
+
+___
+
+[« Back - Logical Operators](3-ComLogOps.md)
 
 
