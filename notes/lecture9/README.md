@@ -15,6 +15,7 @@ This lecture focuses on the programming features of the PHP language including d
 
 ### Hacking With PHP
 - Chapter 2.6.8: [Conditional Statements](http://www.hackingwithphp.com/2/6/8/conditional-statements)
+- Chapter 2.6.9: [Case Switching](http://www.hackingwithphp.com/2/6/9/case-switching)
 - Chapter 3: [Simple Variables and Operators](http://www.hackingwithphp.com/3/0/0/simple-variables-and-operators)
 - Chapter 5: [Arrays](http://www.hackingwithphp.com/5/0/0/arrays)
 

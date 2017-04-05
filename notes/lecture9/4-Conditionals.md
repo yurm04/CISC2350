@@ -106,6 +106,10 @@ switch ($animal) {
 	default:
 		echo "A group of animals is called Rose Hill Students";
 }
+
+/**
+ * the sentence "echo "A group of dogs is called a pack" will be displayed
+ */
 ```
 
 

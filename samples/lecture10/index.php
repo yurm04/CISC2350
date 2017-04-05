@@ -3,10 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lecture 10</title>
+
+	<style>
+		section {
+			margin-bottom: 5rem;
+		}
+	</style>
 </head>
 <body>
 	<!-- SWITCH STATEMENTS -->
 	<section style="display:none;">
+		<h2>Switch Statements</h2>
+		<hr>
 		<?php
 			$animal = 'dog';
 
@@ -34,5 +42,160 @@
 			}
 		?>
 	</section>
+
+	<!-- WHILE LOOP -->
+	<section style="display:block">
+		<h2>While loops</h2>
+		<hr>
+
+		<?php
+			// start off with a count of 0
+			$count = 0;
+
+			// create my while loop and evaluate the condition of my count variable
+			while ( $count <= 10) {
+				// print out the current count
+				echo "$count ";
+
+				// MAKE SURE TO UPDATE THE VALUE THAT I AM EVALUATING TO AVOID AN INFINITE LOOP
+				$count++;
+			}
+		?>
+	</section>
+
+	<!-- DO-WHILE LOOP -->
+	<section style="display:block">
+		<h2>Do-While loops</h2>
+		<hr>
+
+		<?php
+			// start off with a count of 0
+			$count = 0;
+
+			// start my loop, and execute the loop code FIRST
+			do {
+				// echo out the current count
+				echo "$count ";
+
+				// MAKE SURE TO UPDATE THE VALUE THAT I AM EVALUATING TO AVOID AN INFINITE LOOP
+				$count++;
+
+				// evaluate the expression.  If condition met, end loop. If not met, continue with loop
+			} while ($count <= 10);
+		?>
+	</section>
+
+	<!-- DO-WHILE LOOP -->
+	<section style="display:block">
+		<h2>For loops</h2>
+		<hr>
+
+		<?php
+			/**
+			 * 1. Start with the initialization expression that creates the $count variable and sets it to 0
+			 * 2. Specify the condition that must be TRUE in order for the loop to continue.
+			 * 3. Increment the value being checked in the condition to avoid an infinite loop
+			 */
+			for ($count = 0; $count <= 10; $count++) {
+				echo "$count ";
+			}
+		?>
+	</section>
+
+	<!-- FOREACH LOOP -->
+	<section style="display:block">
+		<h2>For-Each loops</h2>
+		<hr>
+
+		<?php
+			$languages = array("HTML", "CSS", "PHP");
+		?>
+
+		<h3>Languages we have learned so far:</h3>
+		<ul>
+			<?php
+				// for each element of the $languages array, echo out the language as a list item
+				foreach ($languages as $language) {
+					echo "<li>$language</li>";
+				}
+			?>
+		</ul>
+	</section>
+
+	<!-- ASSOCIATIVE FOREACH LOOP -->
+	<section style="display:block">
+		<h2>Associative For-Each loops</h2>
+		<hr>
+
+		<h3>Languages we have learned so far:</h3>
+		<ul>
+			<?php
+				$languages = array(
+					"markup" => "HTML",
+					"stylesheet" => "CSS",
+					"programming" => "PHP"
+				);
+
+				// for each element of the $languages array, echo out the language and language type.
+				foreach ($languages as $type => $name) {
+					echo "<li>The $type language we learned is $name</li>";
+				}
+			?>
+		</ul>
+	</section>
+
+	<!-- CONTINUE KEYWORD -->
+	<section style="display:block">
+		<h2>Continue</h2>
+		<hr>
+
+		<h3>Languages we have learned so far:</h3>
+		<ul>
+			<?php
+				$languages = array(
+					"markup" => "HTML",
+					"database" => "MySQL",
+					"stylesheet" => "CSS",
+					"programming" => "PHP"
+				);
+
+				// for each element of the $languages array, echo out the language and language type.
+				foreach ($languages as $type => $name) {
+					// we haven't learned a database language yet, so let's skip with the continue keyword
+					if ($type === 'database') {
+						// don't execute the rest of the code block, just go on to the next iteration
+						continue;
+					}
+
+					echo "<li>The $type language we learned is $name</li>";
+				}
+			?>
+		</ul>
+	</section>
+
+	<!-- BREAK KEYWORD -->
+	<section style="display:block">
+		<h2>Break</h2>
+		<hr>
+
+		<?php
+			$lights = array("green", "green", "green", "red", "green", "green", "green");
+
+			foreach($lights as $light) {
+				$command = ($light === 'green') ? 'GO' : 'STOP';
+
+				echo '<p style="color:' . $light . ';">' . $command . '</p>';
+
+				// if the command is equal to 'STOP', break out of the loop and stop iterating
+				if ($command === 'STOP') {
+					break;
+				}
+			}
+		?>
+	</section>
+
+
+
+
 </body>
 </html>
