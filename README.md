@@ -25,4 +25,4 @@ There will often be live coding samples demonstrated during our scheduled class 
 So, the code samples for the Lincoln Center, lecture1 session can be found in the `samples/lecture1/c01` directory.
 
 ## <a name="contribute"></a>Contributing
-This repo is open source and all are welcome to contribute :tada:  Please review the repo [contributing guide](CONTRIBUTING.md) before opening an issue, submitting a pull request, or participating in any open discussions.
+This repo is open source and all are welcome to contribute :tada:  Please review the repo [contributing guide](.github/CONTRIBUTING.md) before opening an issue, submitting a pull request, or participating in any open discussions.
