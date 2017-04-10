@@ -15,3 +15,4 @@ This week we will continue exploring the control structures available in PHP, in
 - [Chapter 2.6.11: Infinite Loops](http://www.hackingwithphp.com/2/6/11/infinite-loops)
 - [Chapter 2.6.12: Special Loop Keywords](http://www.hackingwithphp.com/2/6/12/special-loop-keywords)
 - [Chapter 2.6.13: Loops within Loops](http://www.hackingwithphp.com/2/6/13/loops-within-loops)
+- [Chapter 4: Functions](http://www.hackingwithphp.com/4/0/0/functions)
