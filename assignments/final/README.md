@@ -45,3 +45,15 @@ Below are the requirements for each aspect of the final project: HTML, CSS, PHP,
 	- Take questions from the class.
 
 :exclamation: **IMPORTANT** Because final project and course grades need to be submitted within a few days of our final exam period, **LATE SUBMISSIONS WILL NOT BE ACCEPTED**.  There will be NO exceptions without an acceptable explanation, proper notice, and something signed by someone important to convey the dire nature of your inability to submit the project on time.
+
+## Project suggestions
+If you can't come up with an idea for your final project, I suggest taking a crack at one of the below suggestions.  My advice for getting those creativity points is to look at an existing app/website/software that you enjoy and try to recreate a simpler version of it using the skills we've learned.
+
+- To-do list: add, delete, update, view tasks.  Get creative by enabling multiple lists for different categories of tasks.
+- Address book: create, delete, update, view contact information of people you know.
+- Grade Book: add students and grades, calculate averages, provide weights to assignments/tests/projects.
+- Book list (Like GoodReads): Keep track of books read or books to read.  Check them off after you've read them, create lists for different books.
+- Grocery list
+- Recipe book
+
+And here's a repo that is just a [list of cool and simple ideas](https://github.com/tastejs/awesome-app-ideas).  It's up to you to bring the ideas to life!

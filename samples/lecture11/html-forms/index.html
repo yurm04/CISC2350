@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lecture 11 HTML Forms</title>
+</head>
+<body>
+	<h1>Lecture 11: HTML Forms</h1>
+
+	<section style="display: block">
+		<h2>Simple HTML Form</h2>
+		<hr>
+
+		<!-- START HTML FORM -->
+		<form name="our-first-form" action="index.html" method="post">
+			<label for="first-name">Enter first name:</label>
+			<input type="text" name="first-name">
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+
+	<section style="display: block">
+		<h2>Form Input Types</h2>
+		<hr>
+
+		<!-- START HTML FORM -->
+		<form name="our-first-form" action="index.html" method="post">
+
+			<h3>Text</h3>
+			<label for="text-input">Enter text</label>
+			<input type="text" name="text-input">
+
+			<h3>Textarea</h3>
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+			<textarea></textarea>
+
+			<h3>Checkbox</h3>
+			<label for="checkbox">Check a box</label>
+			<input type="checkbox" name="checkbox">
+
+			<h3>Radio</h3>
+			<label for="option1">Option 1</label>
+			<input type="radio" name="option1">
+			<br>
+			<label for="option2">Option 2</label>
+			<input type="radio" name="option2">
+			<br>
+			<label for="option3">Option 3</label>
+			<input type="radio" name="option3">
+
+			<h3>Dropdown</h3>
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select -->
+			<select name="dropdown" id="my-dropdown">
+				<!-- select elements need option elements as its children -->
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+
+			<h3>Submit</h3>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+
+
+	<section style="display: block">
+		<h2>Example Form</h2>
+		<form action="index.html" method="post">
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset -->
+			<fieldset>
+				<label for="first-name">Enter first name</label>
+				<input type="text" name="first-name">
+			</fieldset>
+
+			<fieldset>
+				<label for="last-name">Enter last name</label>
+				<input type="text" name="last-name">
+			</fieldset>
+
+			<fieldset>
+				<label for="age">Enter age</label>
+				<input type="number" name="age">
+			</fieldset>
+
+			<fieldset>
+				<p>Select gender</p>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" value="male">
+				<br>
+				<label for="female">Female</label>
+				<input type="radio" name="gender" value="female">
+			</fieldset>
+
+			<fieldset>
+				<select name="year" id="year">
+					<option value="freshman">Freshman</option>
+					<option value="sophomore" selected>Sophomore</option>
+					<option value="junior">Junior</option>
+					<option value="senior">Senior</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<p>Select classes completed</p>
+				<label for="classes">CS101</label>
+				<input type="checkbox" name="cs101">
+				<br>
+				<label for="classes">CS102</label>
+				<input type="checkbox" name="cs102">
+				<br>
+				<label for="classes">CS2350</label>
+				<input type="checkbox" name="cs2350">
+				<br>
+			</fieldset>
+
+			<fieldset>
+				<label for="telephone">Enter telephone</label>
+				<input type="tel" name="telephone">
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
