@@ -3,8 +3,8 @@ This week will focus on gathering information from the user via HTML forms on th
 
 ## Table of Contents
 
-[1. HTML Forms](1-HTMLForms.md)
-[2. Handling Forms](2-HandleForm.md)
+- [1. HTML Forms](1-HTMLForms.md)
+- [2. Handling Forms](2-HandleForm.md)
 
 ## Resources
 
@@ -13,3 +13,8 @@ This week will focus on gathering information from the user via HTML forms on th
 
 ### Hacking with PHP
 - [Chapter 7: HTML Forms](http://www.hackingwithphp.com/7/0/0/html-forms)
+
+
+___
+
+[Next - HTML Forms »](1-HTMLForms.md)

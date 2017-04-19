@@ -17,4 +17,4 @@ By having access to the form data via the `$_POST` variable, we can process, man
 
 ___
 
-[« Back - HTML Forms »](1-HTMLForms.md)
+[« Back - HTML Forms](1-HTMLForms.md)

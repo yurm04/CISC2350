@@ -41,9 +41,10 @@ A `label` element does exactly what you think it would do: it is the *label* of 
 
 - The `for` attribute links the label element to the `input` element it corresponds to (it is a label _for_ this element).  The value of `for` should be the `name` of the element it is labelling.
 
-
+### Other form elements
+There are many other types of [form elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) available in HTML.  Check the lecture [sample file](/samples/lecture11/html-forms/index.html) for more form elements in actions
 ___
 
-[Next -  Handling Forms»](2-HandleForm.md)
+[Next -  Handling Forms »](2-HandleForm.md)
 
-[« Back - ](README.md)
+[« Back - Intro](README.md)
