@@ -71,6 +71,13 @@ Before we can query tables in a specific database, we need to tell the MySQL CLI
 USE database_name;
 ```
 
+## Delete Database
+To delete a database you can run:
+
+```sql
+DROP DATABASE database_name
+```
+
 ## Create a table
 Now that the CLI knows which database it should be using, we can start creating our database tables.  Each database table needs to have a specific structure that is defined by its user.  The structure needs to include the name of the table, the columns that make up the table, and data types for each column.  You can also decide to have a unique identifier for the table records, choose how much data can be stored in a column, if the column should require some value when created, etc.
 
@@ -116,6 +123,13 @@ Will display:
 | lastname       | varchar(128)     | YES  |     | NULL    |                |
 | credits        | int(3)           | YES  |     | NULL    |                |
 +----------------+------------------+------+-----+---------+----------------+
+```
+
+## Delete a table
+To delete a table you can use the `DROP` command.
+
+```sql
+DROP TABLE database_name
 ```
 
 ## Adding records
@@ -261,7 +275,6 @@ ALTER TABLE tablename DROP col_name;
 ```sql
 ALTER TABLE students DROP credits;
 ```
-
 
 ___
 

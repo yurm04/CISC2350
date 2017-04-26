@@ -49,7 +49,7 @@
 		}
 	?>
 
-	<?php /* Display confirmation */ ?>
+	<?php /* Handle form submit */ ?>
 	<?php if ( !empty($_POST['first_name']) ): ?>
 		<?php
 			/**
@@ -80,6 +80,8 @@
 			// close the prepared statement
 			mysqli_stmt_close($prepared_insert);
 		?>
+
+		<?php /* If successfully inserted rows, display confirmation message */ ?>
 		<?php if ($success && $count > 0): ?>
 		<h3>Thanks for submitting <?php echo $first_name; ?>, below is the updated students table</h3>
 		<?php endif; ?>
@@ -105,8 +107,6 @@
 				$students[$i]['last_name'] = $row['lastname'];
 				$students[$i]['credits'] = $row['credits'];
 			}
-		} else {
-			echo "No results found.";
 		}
 	?>
 	<?php if ( !empty($students) ): ?>
@@ -128,6 +128,8 @@
 			</tr>
 			<?php endforeach; ?>
 		</table>
+	<?php else: ?>
+		<h3>No students to display.</h3>
 	<?php endif ?>
 </body>
 </html>
