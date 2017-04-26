@@ -1,0 +1,920 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>1-MySQL</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-intro-to-mysql" class="anchor" href="#intro-to-mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intro to MySQL</h1>
+<p>MySQL is a type of database server or database management system (DBMS). A database server is a program that is able to store and organize large amounts of information and is easily accessible from programming languages like PHP.  We can search of the information stored in a database by creating a <em>query</em>.  A query is a request for information from the database generated by the user with specific parameters to be met.  In order to create a query, MySQL uses a <em>structured query language</em> (SQL) to specify what information should be returned.</p>
+<p>An example of a query in plain English could be something like...</p>
+<pre><code>Get all information on every student available
+</code></pre>
+<p>Translating this to a structure query language, it would look like...</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> <span class="pl-k">*</span> <span class="pl-k">FROM</span> students</pre></div>
+<p>Where <code>SELECT</code> is the action we want to perform, <code>*</code> is a special character that means <em>all</em> or <em>everything</em>, and <code>students</code> is the <em>table</em> we want to select from.</p>
+<h2>
+<a id="user-content-database-tables" class="anchor" href="#database-tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Database tables</h2>
+<p>A database consists of one or more <em>tables</em>.  A database table is very similar to a table in Microsoft Excel - the columns make up the <em>fields</em> of the table and each row is considered the <em>record</em> for the specific entry.</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>firstname</th>
+<th>lastname</th>
+<th>credits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>smitty</td>
+<td>werbenjagermanjensen</td>
+<td>124</td>
+</tr>
+<tr>
+<td>2</td>
+<td>john</td>
+<td>smith</td>
+<td>42</td>
+</tr>
+<tr>
+<td>3</td>
+<td>michael</td>
+<td>gacia</td>
+<td>122</td>
+</tr>
+<tr>
+<td>3</td>
+<td>yuraima</td>
+<td>estevez</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<p>Because databases can have more than one table, each table needs to be uniquely identified with a name.  Let's name the above table the <code>students</code> table.</p>
+<h2>
+<a id="user-content-accessing-mysql-via-the-command-line" class="anchor" href="#accessing-mysql-via-the-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Accessing MySQL via the command line</h2>
+<p>We can access MySQL by using the command line.  Through the command line, we can run SQL commands to create, read, update, and delete (CRUD) the data stored in our database(s).  Open up the command line and run the following command:</p>
+<pre><code>/Applications/MAMP/Library/bin/mysql -uroot -proot
+</code></pre>
+<p><strong>NOTE</strong> MAMP must be running in order to use the CLI.</p>
+<p>This should start the MAMP MySQL command line interface (cli) and log in using the username <code>root</code> and password <code>root</code>.  Now that we're logged into MySQL, run your first command to display the databases we have avalable.</p>
+<div class="highlight highlight-source-sql"><pre>SHOW databases;</pre></div>
+<h3>
+<a id="user-content-using-the-mysql-cli" class="anchor" href="#using-the-mysql-cli" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the MySQL CLI</h3>
+<h4>
+<a id="user-content-the-semi-colon-" class="anchor" href="#the-semi-colon-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Semi-colon <code>;</code>
+</h4>
+<p>First thing to note about the MySQL command above is that we added a semi-colon at the end of it.  This indicates to  MySQL that we have finished entering a command and it should run it.  The semi-colon is useful so that we can use multiple lines in our queries when they get too long.</p>
+<h4>
+<a id="user-content-cancelling-a-command" class="anchor" href="#cancelling-a-command" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cancelling a command</h4>
+<p>If you want to cancel a command you started to write without actually running it, enter the <code>\c</code> command and press the enter key.</p>
+<h4>
+<a id="user-content-exiting-the-cli" class="anchor" href="#exiting-the-cli" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exiting the CLI</h4>
+<p>When you are done using the CLI and want to quit out of the program, you can enter the <code>exit</code> command to quit.  If you need to immediately abort the CLI, you can use the <code>CTRL + c</code> keyboard shortcut.</p>
+<h2>
+<a id="user-content-creating-a-database" class="anchor" href="#creating-a-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating a database</h2>
+<p>To create a new database, run the command:</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">CREATE</span> <span class="pl-k">DATABASE</span> <span class="pl-en">database_name</span>;</pre></div>
+<p><em>Yes, it's that simple.</em>*</p>
+<p>*Not really...</p>
+<h2>
+<a id="user-content-using-a-database" class="anchor" href="#using-a-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using a database</h2>
+<p>Before we can query tables in a specific database, we need to tell the MySQL CLI <em>which</em> database we would like to work with:</p>
+<div class="highlight highlight-source-sql"><pre>USE database_name;</pre></div>
+<h2>
+<a id="user-content-create-a-table" class="anchor" href="#create-a-table" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a table</h2>
+<p>Now that the CLI knows which database it should be using, we can start creating our database tables.  Each database table needs to have a specific structure that is defined by its user.  The structure needs to include the name of the table, the columns that make up the table, and data types for each column.  You can also decide to have a unique identifier for the table records, choose how much data can be stored in a column, if the column should require some value when created, etc.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">CREATE</span> <span class="pl-k">TABLE</span> <span class="pl-en">students</span> (
+  id <span class="pl-k">INT</span> UNSIGNED <span class="pl-k">NOT NULL</span> AUTO_INCREMENT KEY,
+  firstname <span class="pl-k">VARCHAR</span>(<span class="pl-c1">128</span>),
+  lastname <span class="pl-k">VARCHAR</span>(<span class="pl-c1">128</span>),
+  credits <span class="pl-k">INT</span>(<span class="pl-c1">3</span>)
+);</pre></div>
+<p>This statement has accomplished the following:</p>
+<ul>
+<li>created a new table called <code>students</code>.</li>
+<li>The <code>id</code> column of type integer (<code>INT</code>), that <em>cannot</em> be empty (<code>NOT NULL</code>), will automatically increment with each new row (<code>AUTO_INCREMENT</code>), and that is the <em>unique identifier</em> for each record (<code>KEY</code>).</li>
+<li>The <code>firstname</code> column that can be text of up to 128 characters <code>VARCHAR(28)</code>.</li>
+<li>The <code>lastname</code> column that can be text of up to 128 characters <code>VARCHAR(28)</code>.</li>
+<li>The <code>earned_credits</code> column records an integer of up to 3 digits long.</li>
+</ul>
+<p><strong>NOTE</strong> There are many kinds of <a href="https://dev.mysql.com/doc/refman/5.7/en/data-types.html">data types</a> in MySQL.  Review the documentation to discover which ones are appropriate to use for your projects.</p>
+<p>To ensure that the table was created, list out all available tables for this database using the <code>SHOW</code> command.</p>
+<div class="highlight highlight-source-sql"><pre>SHOW tables;</pre></div>
+<p>Using the <code>DESCRIBE</code> command MySQL will display the structure of a table you specify.</p>
+<div class="highlight highlight-source-sql"><pre>DESCRIBE school;</pre></div>
+<p>Will display:</p>
+<pre><code>+----------------+------------------+------+-----+---------+----------------+
+| Field          | Type             | Null | Key | Default | Extra          |
++----------------+------------------+------+-----+---------+----------------+
+| id             | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| firstname      | varchar(128)     | YES  |     | NULL    |                |
+| lastname       | varchar(128)     | YES  |     | NULL    |                |
+| credits        | int(3)           | YES  |     | NULL    |                |
++----------------+------------------+------+-----+---------+----------------+
+</code></pre>
+<h2>
+<a id="user-content-adding-records" class="anchor" href="#adding-records" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding records</h2>
+<p>To add records to a table, you need to use the following command:</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">INSERT INTO</span> tablename (field1, field2, field3 ...)
+  <span class="pl-k">VALUES</span> (value1, value2, value3);</pre></div>
+<p>For the <code>INSERT</code> command, you specify which columns to insert the data into.  For <code>VALUES</code>, you list out each column's value in the same order that it occurred in <code>INSERT</code>.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">INSERT INTO</span> students (firstname, lastname, credits)
+  <span class="pl-k">VALUES</span> (<span class="pl-s"><span class="pl-pds">"</span>Yuraima<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Estevez<span class="pl-pds">"</span></span>, <span class="pl-c1">102</span>);</pre></div>
+<h2>
+<a id="user-content-querying-a-database" class="anchor" href="#querying-a-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Querying a database</h2>
+<p>Now that our database and table is set up, let's query some data.</p>
+<h3>
+<a id="user-content-select" class="anchor" href="#select" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>SELECT</code>
+</h3>
+<p>The <code>SELECT</code> command is used to extract data from a table.  The basic structure for this command looks like:</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> something <span class="pl-k">FROM</span> tablename;</pre></div>
+<p>Where the <code>something</code> can be <code>*</code> to select everything from the table, a list of column names to only display those fields for each record, or another expression to make up the data that should be extracted.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> <span class="pl-k">*</span> <span class="pl-k">FROM</span> students;</pre></div>
+<p>Will select all of the information from the <code>students</code> table.</p>
+<pre><code>+----+-----------+----------+---------+
+| id | firstname | lastname | credits |
++----+-----------+----------+---------+
+|  1 | Yuraima   | Estevez  | 102     |
++----+-----------+----------+---------+
+</code></pre>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> firstname, lastname <span class="pl-k">FROM</span> students;</pre></div>
+<p>Will only display the first and last name of each student record.</p>
+<pre><code>+-----------+----------+
+| firstname | lastname |
++-----------+----------+
+| Yuraima   | Estevez  |
++-----------+----------+
+</code></pre>
+<h3>
+<a id="user-content-delete" class="anchor" href="#delete" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>DELETE</code>
+</h3>
+<p><code>DELETE</code> will remove the records returned by the query from the table selected.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">DELETE</span> <span class="pl-k">FROM</span> students;</pre></div>
+<p>Will delete <em>all</em> records from the <code>students</code> table.</p>
+<h3>
+<a id="user-content-where" class="anchor" href="#where" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>WHERE</code>
+</h3>
+<p>The <code>WHERE</code> keyword let's you narrow down queries by returning only those that match the condition being set.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-c"><span class="pl-c">--</span> deletes any record from students table with firstname of "yuraima"</span>
+<span class="pl-k">DELETE</span> <span class="pl-k">FROM</span> students
+<span class="pl-k">WHERE</span> firstname<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Yuraima<span class="pl-pds">"</span></span>;</pre></div>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> firstname, lastname <span class="pl-k">FROM</span> students
+<span class="pl-k">WHERE</span> lastname <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Yuraima<span class="pl-pds">"</span></span></pre></div>
+<h3>
+<a id="user-content-update-and-set" class="anchor" href="#update-and-set" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>UPDATE</code> and <code>SET</code>
+</h3>
+<p><code>UPDATE</code> and <code>SET</code> are used to update the record that gets returned by the query.</p>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">UPDATE</span> tablename <span class="pl-k">SET</span> column<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>value<span class="pl-pds">"</span></span>;</pre></div>
+<div class="highlight highlight-source-sql"><pre><span class="pl-c"><span class="pl-c">--</span> updates the firstname to "Yurm" for any records with the lastname of "Estevez"</span>
+<span class="pl-k">UPDATE</span> students
+<span class="pl-k">SET</span> firstname<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Yurm<span class="pl-pds">"</span></span>
+<span class="pl-k">WHERE</span> lastname<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Estevez<span class="pl-pds">"</span></span>;</pre></div>
+<h2>
+<a id="user-content-changing-a-tables-structure" class="anchor" href="#changing-a-tables-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changing a table's structure</h2>
+<p>Once you have created a table structure, it can still be changed with the <code>ALTER</code> command.</p>
+<h3>
+<a id="user-content-rename-a-table" class="anchor" href="#rename-a-table" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rename a table</h3>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> current_tablename new_tablename;</pre></div>
+<hr>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> students students_info;</pre></div>
+<h3>
+<a id="user-content-change-data-type-of-column" class="anchor" href="#change-data-type-of-column" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change data type of column</h3>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> tablename MODIFY col new_type;</pre></div>
+<hr>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> students MODIFY credits <span class="pl-k">SMALLINT</span>;</pre></div>
+<h3>
+<a id="user-content-add-a-new-column" class="anchor" href="#add-a-new-column" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add a new column</h3>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> tablename ADD new_col col_type;</pre></div>
+<hr>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> students ADD dob <span class="pl-k">INT</span>(<span class="pl-c1">4</span>);</pre></div>
+<h3>
+<a id="user-content-rename-a-column" class="anchor" href="#rename-a-column" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rename a column</h3>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> tablename CHANGE current_col new_col col_type;</pre></div>
+<hr>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> tablename CHANGE credits earned_credits <span class="pl-k">INT</span>(<span class="pl-c1">3</span>);</pre></div>
+<h3>
+<a id="user-content-removing-a-column" class="anchor" href="#removing-a-column" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Removing a Column</h3>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> tablename DROP col_name;</pre></div>
+<hr>
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> students DROP credits;</pre></div>
+</article></body></html>
