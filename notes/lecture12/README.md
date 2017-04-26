@@ -3,7 +3,7 @@ This week we will be learning about the MySQL database and and how to use it wit
 
 ## Table of Contents
 1. [Introduction to MySQL](1-MySQL.md)
-2. [Using MySQL in PHP](2-ComBined.md)
+2. [Using MySQL in PHP](2-Combined.md)
 
 ## Resources
 
