@@ -37,7 +37,7 @@ $students = array(
 	'summer' => 48,
 	'beth' => 75,
 	'jerry' => 32,
-	'bird_man' => 97
+	'bird_person' => 97
 );
 ```
 
@@ -50,5 +50,3 @@ Use 2 built-in PHP functions in your program to format your content correctly.  
 - Part 3: 10pts
 - Semantically correct HTML: 10pts
 - Error free PHP: 10pts
-
-
