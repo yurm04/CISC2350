@@ -24,6 +24,7 @@ function get_db_connection() {
 		fatal_error();
 	};
 
+	// set up the database config
 	db_config($db_conn);
 
 	return $db_conn;
@@ -61,7 +62,9 @@ function db_config($db_conn) {
 	// use newly created database
 	mysqli_select_db($db_conn, DB_NAME);
 
-	// also create tables along with database
+	/**
+	 * also create tables along with database
+	 */
 
 	// create lists table
 	$create_lists_table = 'CREATE TABLE lists (
@@ -114,6 +117,13 @@ function close_db_connection($db_conn) {
 	return true;
 }
 
+/**
+ * Queries the database for the lists that have
+ * been created
+ *
+ * @param   {object} $db_conn - the database connection object
+ * @returns {bool | array} false if no lists available, array of lists if available
+ */
 function get_lists($db_conn) {
 	$query = 'SELECT * FROM lists';
 	$result = mysqli_query($db_conn, $query);
@@ -135,6 +145,13 @@ function get_lists($db_conn) {
 	return $lists;
 }
 
+/**
+ * Creates a new list in the lists table
+ *
+ * @param   {object} $db_conn - database connection object
+ * @param   {string} $name - the list name
+ * @returns {bool} success of the list creation
+ */
 function create_list($db_conn, $name) {
 	$query = 'INSERT INTO lists (name) VALUES (?)';
 
@@ -155,6 +172,13 @@ function create_list($db_conn, $name) {
 	return true;
 }
 
+/**
+ * Deletes a list from the lists table
+ *
+ * @param   {object} $db_conn - database connection object
+ * @param   {int} $id - list id
+ * @returns {bool} success of the deletion
+ */
 function delete_list($db_conn, $id) {
 	$query = 'DELETE FROM lists WHERE id=?';
 
@@ -175,6 +199,13 @@ function delete_list($db_conn, $id) {
 	return true;
 }
 
+/**
+ * Gets the list data of a certain id
+ *
+ * @param   {object} $db_conn - database connection object
+ * @param   {int} $id - list id
+ * @returns {bool | int} false if failure, or the list data if successful
+ */
 function get_list($db_conn, $id) {
 	$query = "SELECT * FROM lists WHERE id = $id";
 	$result = mysqli_query($db_conn, $query);
@@ -192,6 +223,13 @@ function get_list($db_conn, $id) {
 	return mysqli_fetch_assoc($result);
 }
 
+/**
+ * Queries the database for the list items of a list.
+ *
+ * @param   {object} $db_conn - database connection object
+ * @param   {int} $id - int
+ * @returns [type] [description]
+ */
 function get_list_items($db_conn, $id) {
 	$query = "SELECT * FROM list_items WHERE list_id = $id ORDER BY shuffle_order ASC";
 	$result = mysqli_query($db_conn, $query);

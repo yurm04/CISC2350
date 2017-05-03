@@ -1,4 +1,10 @@
 <?php
+/**
+ * Handles the deletion of a list item and then
+ * redirects back to the list.php page with the list id
+ * that the deleted list item belonged to
+ */
+
 require_once('functions.php');
 
 if (!empty($_GET['item_id'])) {

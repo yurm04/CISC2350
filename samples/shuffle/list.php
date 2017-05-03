@@ -8,17 +8,22 @@ if (!empty($_POST['list_name'])) {
 	$result = create_list($db_conn, $_POST['list_name']);
 	$list_id = mysqli_insert_id($db_conn);
 } else if (!empty($_GET['id'])) {
-	// or just load the passed list id
+	// or just load the id that was passed in the query string to the $_GET variable
 	$list_id = $_GET['id'];
 }
 
 $list = get_list($db_conn, $list_id);
 $list_items = get_list_items($db_conn, $list_id);
 
+/**
+ * If the 'shuffle' key was set in the query string then shuffle
+ * the contents of the list and update the new order to the database
+ */
 if (!empty($_GET['shuffle'])) {
 	shuffle($list_items);
 	shuffle_items($db_conn, $list_items);
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -38,14 +43,24 @@ if (!empty($_GET['shuffle'])) {
 			<?php foreach ($list_items as $item): ?>
 			<tr>
 				<td><?php echo $item['name']; ?></td>
+				<!--
+					Pass the list_item id as a query string argument to check
+					in delete_list_item.php
+				-->
 				<td><a href="delete_list_item.php?item_id=<?php echo $item['id']; ?>&list_id=<?php echo $list_id; ?>">delete</a></td>
 			</tr>
 			<?php endforeach ?>
 		</table>
+		<!--
+			Pass the list id and shuffle flas as query string arguments
+			to load the right list and shuffle the items of the list
+			in list.php
+		-->
 		<a href="list.php?id=<?php echo $list_id; ?>&shuffle=true">Shuffle items</a>
 	<?php else: ?>
 		<p>No items created yet.</p>
 	<?php endif ?>
+
 
 	<form action="create_items.php" method="post" name="create-items">
 		<h2>Add new items</h2>

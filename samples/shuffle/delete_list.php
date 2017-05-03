@@ -1,5 +1,11 @@
 <?php
+/**
+ * Handles the deletion of a list from the id passed
+ * and then redirects back to the home page
+ */
+
 require_once('functions.php');
+
 $list_id;
 
 if (!empty($_GET['id'])) {
