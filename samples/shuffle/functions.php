@@ -42,6 +42,7 @@ function get_db_connection() {
 function db_config($db_conn) {
 	// Query for database
 	$query = 'SHOW DATABASES LIKE "' . DB_NAME . '"';
+	// SHOW DATABASES LIKE shuffle
 	$result = mysqli_query($db_conn, $query);
 
 	// db exists, don't continue with setup steps

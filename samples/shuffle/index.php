@@ -36,20 +36,26 @@
 						of the url.  The query string is used to pass information to a page via the
 						GET request/method.
 
+						http://localhost:8888/list.php?id=2
+
+						$_GET['id'] => 2
+
 						everything that comes after a "?" in the url is part of the query string.  The query string
 						works by having a key/value system for its parameters.  The "key" is assigned a value as follows:
 
 							key=some_value
 
 						There should be no spaces in the keys or values, since they need to be valid urls.  To have several key/value pairs in your query string, delimit them with the "&" character:
+
 							key1=value1&key2=value2&key3=value3
 
 						can be considered as:
 
-							key1 => value1,
-							key2 => value2,
+							key1 => value1&
+							key2 => value2&
 							key3 => value3
 
+							$_GET['key1'] => value1
 						The query values in your url query string can be accessed as the $_GET variable (Like $_POST).
 					-->
 				</td>
