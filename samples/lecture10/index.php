@@ -238,6 +238,88 @@
 		?>
 	</section>
 
+	<!-- DEFAULT ARGUMENT VALUES -->
+	<section>
+		<2>Default Argument Values</h2>
+		<hr>
+
+		<p>Sometimes, it's helpful to assign a "default" argument value to your functions. If the argument value you're using is the same most of the time, having a default argument value written into your function will save you time.</p>
+
+		<p>To assign a default argument value to your function, simply initialize the argument with the default value, like this:</p>
+
+		<code>
+		<?php
+			// Define the function "breakfast", which says that you had a certain kind of fruit food item for breakfast, with default argument values set to "orange" and "juice":
+			function breakfast($fruit = "orange", $food = "juice") {
+				echo "<p>I had $fruit $food for breakfast.</p>";
+			}
+
+			// Calling the function without passing any argument values to the function will result in the output "I had orange juice for breakfast.":
+			breakfast();
+
+			// Calling the function again, this time passing "orange" and "juice" to the function will result in same output, except we had to type out "orange" and "juice":
+			breakfast("orange", "juice");
+
+			// Calling the function, this time passing "apple" and "pie" to the function, will override the default argument values and result in the output "I had apple pie for breakfast.":
+			breakfast("apple", "pie");
+
+			// Calling the function without passing any argument values to the function, again, will result in the output we had before with the default argument values:
+			breakfast();
+		?>
+		</code>
+
+		<p>To have a function with a default argument value return nothing, as if you you didn't pass any value into a function without a default argument value specified, you can use pass "null" into the function. For example:</p>
+
+		<code>
+		<?php
+			// Define the function "thankyou1" WITHOUT default argument values set:
+			function thankyou1($name) {
+				echo "<p>Thank you, $name!";
+			}
+
+			// Calling the function without passing any argument values to the function will result in the output "Thank you, !":
+			thankyou1();
+
+			// Calling the function while passing "Bob" to the function will result in the output "Thank you, Bob!":
+			thankyou1("Bob");
+
+			// Define the function "thankyou2" WITH a default argument value set to "Bob":
+			function thankyou2($name = "Bob") {
+				echo "<p> Thank you, $name!";
+			}
+
+			// To obtain the output "Thank you, Bob!", we can simply call the function without passing any argument values to it:
+			thankyou2();
+
+			// To obtain the output "Thank you, !", we'll have to pass "null" into the function:
+			thankyou2(null);
+		?>
+		</code>
+
+		<p>When there are multiple parameters to your function, you can have SOME default argument values while leaving others blank. In such cases, please keep in mind that PHP fills its parameters FROM LEFT TO RIGHT. For example:</p>
+
+		<code>
+		<?php
+			// Define the function "myhood" with two parameters but with only one default argument value set:
+			function myhood($region, $neighborhood = "Harlem") {
+				echo "<p>I live in $region $neighborhood.</p>";
+			}
+
+			// Calling the function without passing any argument values to it will result in "I live in Harlem.":
+			myhood();
+
+			// Calling the function while passing just one argument, "West" to it will result in "I live in West Harlem." because the one argument fills the first parameter, $region:
+			myhood("West");
+
+			// If you want the output "I live in Greenwich Village", i.e. replace "Harlem" with "Greenwich Village" while not specifying a region, this will NOT work--the output will be "I live in Greenwich Village Harlem" because the first argument fills the first parameter:
+			myhood("Greenwich Village");
+
+			// The correct way would be to utilize the "null" value, like this:
+			myhood(null, "Greenwich Village");
+		?>
+		</code>
+	</section>
+
 	<!-- FUNCTION RETURN VALUES  -->
 	<section style="display:block">
 		<h2>Function Return Values</h2>
