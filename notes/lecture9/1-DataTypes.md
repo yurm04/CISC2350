@@ -27,7 +27,7 @@ echo "My name is $name, I live in $city";
 ```
 
 ### The concatenation operator `.`
-The concatenation operator is a special character in PHP `.` used to combine strings.
+The concatenation operator `.` is a special character in PHP used to combine strings.
 
 ```php
 echo 'Hello' . ' World!'; // concatenating string literals
@@ -52,7 +52,7 @@ echo 'My name is ' . $name . ', I am ' . $age . ' years old.';
 ```
 
 ## Integer
-A whole number without a decimal point, like 10. They can hold positive or negative values.
+A whole number without a decimal point, like `10`. They can hold positive or negative values.
 
 ```php
 $age = 26;
@@ -60,7 +60,7 @@ $student_loan_debt = -1000000;
 ```
 
 ## Floats
-A number with precision or with a decimal point: `3.14`. Floating-point numbers have limited precision.  These can be positive or negative in value.
+A number with precision or with a decimal point, like `3.14`. Floating-point numbers have limited precision.  These can be positive or negative in value.
 
 ```php
 $price = 10.77; // cheese pizza and a large soda from Panucci's pizza, same as my pin number
@@ -90,10 +90,10 @@ An array is a *data structure* that can store multiple values in a single variab
 
 *Note*: A data structure is a particular format for storing and organizing data.
 
-There are three different types of arrays in PHP, let's discuss two for now.
+There are three different types of arrays in PHP. Let's discuss two for now.
 
 ### Indexed Arrays
-Sometimes referred to as a numeric array, but this doesn’t mean that it only stores numbers. It means that the indices of the array are a number and values are stored and accessed in a linear manner. They can store anything like numbers, strings, etc.. The default array index starts at `0`.
+Sometimes referred to as a numeric array, but this doesn’t mean that it only stores numbers. It means that the indices of the array are numbers and values are stored and accessed in a linear manner. They can store anything like numbers, strings, etc. The default array index starts at `0`.
 
 ```php
 // this is how you declare and initialize an array

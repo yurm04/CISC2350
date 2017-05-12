@@ -7,7 +7,7 @@ Comparison operators compare two different values to equate to a TRUE or FALSE o
 ### `==` Equality operator
 **Not assignment**.  Checks if two values are equal.  This of it as "_is equal to_".
 
-```
+```php
 1 == 2 // FALSE. 1 does not equal 2
 1 == 1 // TRUE
 
@@ -22,14 +22,14 @@ $val1 == $val3 // TRUE
 ### `===` Identity operator
 Like the equality operator, but also checks if the two values are _of the same type_.
 
-```
+```php
 1 == '1' // FALSE. The integer 1 is not identical to the string "1"
 ```
 
 ### `>` Greater than
 Returns true if the value on the left is greater than the value on the right.
 
-```
+```php
 5 > 1 // TRUE
 1 > 5 // FALSE
 ```
@@ -37,7 +37,7 @@ Returns true if the value on the left is greater than the value on the right.
 ### `<` Less than
 Returns true if the value on the right is greater than the value on the left.
 
-```
+```php
 5 < 1 // FALSE
 1 < 5 // TRUE
 ```
@@ -80,7 +80,7 @@ Returns true if the values on the left and right are not identical.
 
 ## Logical Operators
 
-## `&&` And
+### `&&` And
 Returns TRUE if the value on the left _and_ the value on the right are
 TRUE.
 
@@ -95,9 +95,9 @@ $isCute && $isFunny // FALSE because one of the values is false
 $isCute && $isNice && $isFunny // FALSE because all of the values must be true
 ```
 
-## `||` Or
+### `||` Or
 Those two vertical lines are the pipe character on your keyboard. They
-must be typed without a space in between the two. Returns TRUE if the value on the left _or_ the value on the right are TRUE.
+must be typed without a space in between them. Returns TRUE if the value on the left _or_ the value on the right are TRUE.
 
 ```php
 $isCute = TRUE;
@@ -107,15 +107,15 @@ $isSmart = FALSE;
 
 $isCute || $isNice // TRUE because both of the values are true
 $isCute || $isFunny // TRUE because at least one of the values is true
-$isSmart || $isFunny // FALSE because none of the values are trues
+$isSmart || $isFunny // FALSE because none of the values are true
 
-$isCute || $isNice && $isFunny // FALSE because all of the values must be true
+$isCute || $isNice && $isFunny // FALSE because $isCute OR $isNIce must be true AND $isFunny must also be true
 ```
 
-## `!` Not
-Returns TRUE if a value is _not_ TRUE. It makes it the opposite of it’s current value.
+### `!` Not
+Returns TRUE if a value is _not_ TRUE. This makes it the opposite of its current value.
 
-```
+```php
 $isCute = TRUE;
 !$isCute; // FALSE
 
@@ -126,7 +126,7 @@ $isFunny = FALSE;
 !$isFunny; // TRUE
 
 $isSmart = FALSE;
-!$isSmart; // TRUE;
+!$isSmart; // TRUE
 ```
 
 

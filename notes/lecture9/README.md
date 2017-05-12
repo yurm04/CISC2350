@@ -3,8 +3,8 @@ This lecture focuses on the programming features of the PHP language including d
 
 ## Table of Contents
 - [1. Data Types](1-DataTypes.md)
-- [2. Operators](1-Operators.md)
-- [3. Comparison and Logical Operators](3-Operators.md)
+- [2. Operators](2-Operators.md)
+- [3. Comparison and Logical Operators](3-ComLogOps.md)
 - [4. Conditional Statements](4-Conditionals.md)
 
 ## Resources
@@ -18,5 +18,3 @@ This lecture focuses on the programming features of the PHP language including d
 - Chapter 2.6.9: [Case Switching](http://www.hackingwithphp.com/2/6/9/case-switching)
 - Chapter 3: [Simple Variables and Operators](http://www.hackingwithphp.com/3/0/0/simple-variables-and-operators)
 - Chapter 5: [Arrays](http://www.hackingwithphp.com/5/0/0/arrays)
-
-
