@@ -278,6 +278,6 @@ ALTER TABLE students DROP credits;
 
 ___
 
-[Next - MySQL in PHP »](2-MySQL+PHP.md)
+[Next - MySQL in PHP »](2-Combined.md)
 
 [« Back - Intro ](.md)
